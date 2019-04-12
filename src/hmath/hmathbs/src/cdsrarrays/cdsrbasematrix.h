@@ -95,7 +95,7 @@ public:
 		return m_col;
 	}
 
-	// оставлены для совместимости
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	long n_row() const
 	{
 		return row();
@@ -319,7 +319,7 @@ public:
 
 	const CDSRBaseMatrix<T>& operator = ( const CDSRBaseMatrix<T>& matrix )
 	{
-		resize( matrix.size() );
+		std::vector<T>::resize( matrix.size() );
 		m_row = matrix.m_row;
 		m_col = matrix.m_col;
 		long i, j;
@@ -331,10 +331,10 @@ public:
 
 	bool operator == ( const CDSRBaseMatrix<T>& matrix )
 	{
-		// Проверка на то, равны ли размерности матриц
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		if ( m_row != matrix.m_row || m_col != matrix.m_col )
 			return false;
-		// Проверка на равенство элементов матриц
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		long i, j;
 		for ( i = 0; i < m_row; i++ )
 			for ( j = 0; j < m_col; j++ )
@@ -370,7 +370,7 @@ public:
 	{
 		return column( col );
 	}
-	// оставлено для совместимости
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	CDSRBaseVector<T>* column( long col )
 	{
 #ifdef _DEBUG

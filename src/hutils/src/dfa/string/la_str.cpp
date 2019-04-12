@@ -72,7 +72,7 @@ void LString::Deeds( void )
 	case 2:
 		if( PrevState == 2 ) read_string += character;
 		else if( PrevState == 3 )
-			switch( character.toAscii() )
+			switch( character.toLatin1() )
 			{
 			case _T('n'):
 				read_string += _T("\n");

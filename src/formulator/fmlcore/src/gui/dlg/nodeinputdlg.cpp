@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "nodeinputdlg.h"
 #include "HMathML/isettings.h"

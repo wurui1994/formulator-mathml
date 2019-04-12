@@ -15,7 +15,7 @@ typedef struct tagROOT_INFO
 	{
 		real		= 0.0;
 		image		= 0.0;
-		isComplex	= FALSE;
+		isComplex	= false;
 		multiplicity	= 1;
 	}
 	CDSRComplex getComplexValue( void )

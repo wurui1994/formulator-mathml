@@ -61,8 +61,8 @@ short int hex2dec( QChar S )
 {
 	if( S.isDigit() )
 		return S.digitValue();
-	else if( _isalpha( S.toAscii() ) )
-		return S.toUpper().toAscii() - _T('A') + 10;
+	else if( _isalpha( S.toLatin1() ) )
+		return S.toUpper().toLatin1() - _T('A') + 10;
 	return 0;
 }
 

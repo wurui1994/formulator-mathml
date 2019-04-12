@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QtGui/QApplication>
+#include <QApplication>
 #include <QSplashScreen>
 #include <QThread>
 #include "HMathML/idocview.h"

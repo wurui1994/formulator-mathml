@@ -132,7 +132,7 @@ template <class T>
 void MArray<T>::Copy( const MArray<T>& src )
 {
 	Flush();
-	resize( src.ArrayDim() );
+	std::vector<T>::resize( src.ArrayDim() );
 	std::copy( src.begin(), src.end(), std::vector<T>::begin() );
 }
 

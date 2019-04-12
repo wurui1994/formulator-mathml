@@ -52,7 +52,7 @@ QString hstr_escape_blank( const QString& src )
 	QString ret;
 	for( long i = 0; i < src.length(); i++ )
 	{
-		switch( src.at(i).toAscii() )
+		switch( src.at(i).toLatin1() )
 		{
 		case _T('\t'):
 			ret += "\\t";
@@ -75,7 +75,7 @@ QString hstr_escape( const QString& src )
 	QString ret;
 	for( long i = 0; i < src.length(); i++ )
 	{
-		switch( src.at(i).toAscii() )
+		switch( src.at(i).toLatin1() )
 		{
 		case _T('\\'):
 		case _T('\''):

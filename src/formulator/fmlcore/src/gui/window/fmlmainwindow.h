@@ -93,7 +93,7 @@ protected:
 	RealFde m_ls;
 
 public:
-	QFormulatorMainWindow( bool isEditMode = true, QWidget *parent = 0, Qt::WFlags flags = 0 );
+	QFormulatorMainWindow( bool isEditMode = true, QWidget *parent = 0, Qt::WindowFlags flags = 0 );
 	~QFormulatorMainWindow();
 
 protected:

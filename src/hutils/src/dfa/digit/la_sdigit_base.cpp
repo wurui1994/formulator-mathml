@@ -56,7 +56,7 @@ long LSDigitBase::What( const QChar S )
 {
 	for(;;)
 	{
-		if( _isalnum( S.toAscii() ) )
+		if( _isalnum( S.toLatin1() ) )
 		{
 			long val = hex2dec( S );
 			return (val < 0 || val >= base) ? 0 : 1;

@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "otherstyledlg.h"
 #include "HUtils/idrawstruct.h"

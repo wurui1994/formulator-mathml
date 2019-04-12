@@ -34,10 +34,7 @@
 
 /////////////////////////////////////////////////////////////////////////////
 
-#include <QWidget>
-#include <QCheckBox>
-#include <QRadioButton>
-#include <QSpinBox>
+#include <QtWidgets>
 
 class CTypesettingPage : public QWidget
 {

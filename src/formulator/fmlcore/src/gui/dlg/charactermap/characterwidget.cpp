@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QtGui>
+#include <QtWidgets>
 #include "characterwidget.h"
 
 /////////////////////////////////////////////////////////////////////////////
@@ -109,7 +109,8 @@ void CInsertCharacterWidget::mousePressEvent(QMouseEvent *event)
     if( event->button() == Qt::LeftButton)
 	{
         lastKey = (event->y() / squareSize) * columns + event->x() / squareSize;
-        if( QChar(lastKey).category() != QChar::NoCategory )
+        // Qt5 no NoCategory
+        // if( QChar(lastKey).category() != QChar::NoCategory )
             emit characterSelected(QString(QChar(lastKey)));
         update();
     }

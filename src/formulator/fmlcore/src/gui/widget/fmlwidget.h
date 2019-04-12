@@ -33,6 +33,7 @@
 #define __FMLCORE_FMLWIDGET_H__
 
 #include <QWidget>
+#include <QPrinter>
 #include "fmlbasewidget.h"
 #include "HUtils/idrawing.h"
 #include "../../fmlcore_global.h"

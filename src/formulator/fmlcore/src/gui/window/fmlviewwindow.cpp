@@ -30,7 +30,7 @@
 ****************************************************************************/
 
 #include <QtGlobal>
-#include <QtGui>
+#include <QtWidgets>
 
 #include "HUtils/idrawing.h"
 #include "HMathML/isettings.h"

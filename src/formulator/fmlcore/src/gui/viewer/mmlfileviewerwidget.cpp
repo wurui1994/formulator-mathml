@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "HMathML/isettings.h"
 #include "mmlfileviewerwidget.h"

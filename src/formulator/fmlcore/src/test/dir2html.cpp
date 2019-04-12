@@ -161,9 +161,9 @@ void QFmlTestDir2Html::renderDir(const QDir& rootDir)
 				}
 			}
 			tableBody += itemTemplate
-				.arg(textTemplate.arg(Qt::escape(mml1))).arg(img1)
-				.arg(textTemplate.arg(Qt::escape(mml2))).arg(img2)
-				.arg(textTemplate.arg(Qt::escape(mml3))).arg(img3);
+				.arg(textTemplate.arg(QString(mml1).toHtmlEscaped())).arg(img1)
+				.arg(textTemplate.arg(QString(mml2).toHtmlEscaped())).arg(img2)
+				.arg(textTemplate.arg(QString(mml3).toHtmlEscaped())).arg(img3);
 		}
 		m_text += dirTemplate.arg(QDir(m_rootDir).relativeFilePath(rootDir.path())).arg(tableBody);
 	}

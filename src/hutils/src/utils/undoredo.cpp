@@ -213,7 +213,11 @@ void CUndoRedo::SetTimer()
 
 void CUndoRedo::KillTimer()
 {
-	if( m_nTimerID ) killTimer( m_nTimerID );
+	if( m_nTimerID ) 
+	{
+		killTimer( m_nTimerID );
+		m_nTimerID = 0;
+	}
 }
 
 /////////////////////////////////////////////////////////////////////////////

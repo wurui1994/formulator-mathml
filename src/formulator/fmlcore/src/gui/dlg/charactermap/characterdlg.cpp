@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "characterwidget.h"
 #include "characterdlg.h"

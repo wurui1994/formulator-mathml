@@ -29,7 +29,8 @@
 **
 ****************************************************************************/
 
-#include <QtGui>
+#include <QtWidgets>
+#include <QPageSetupDialog>
 
 #include "pagesetup.h"
 #include "HMathML/isettings.h"

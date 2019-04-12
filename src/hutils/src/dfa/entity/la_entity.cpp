@@ -63,7 +63,7 @@ long LCEntity::What( const QChar S )
 		if( S == _T('#') ) return 4;
 		if( S == _T('x') || S == _T('X') ) return 5;
 		if( S.isDigit() ) return 7;
-		if( _isxdigit( S.toAscii() ) ) return 6;
+		if( _isxdigit( S.toLatin1() ) ) return 6;
 		if( S.isLetter() ) return 2;
 		return 0;
 	}
@@ -103,7 +103,7 @@ void LCEntity::Deeds( void )
 		break;
 	case 8 :
 		identifier += character;
-		value = 16 * value + hex2dec( character.toAscii() );
+		value = 16 * value + hex2dec( character.toLatin1() );
 		if(value < pre) is_big = 1;
 		else pre = value;
 		break;

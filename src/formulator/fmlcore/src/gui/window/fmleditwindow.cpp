@@ -30,7 +30,7 @@
 ****************************************************************************/
 
 #include <QtGlobal>
-#include <QtGui>
+#include <QtWidgets>
 
 #include "HUtils/idrawing.h"
 #include "HMathML/isettings.h"
@@ -63,7 +63,7 @@ void QFormulatorEditWindow::mousePressEvent( QMouseEvent *e )
 	//if( geometry().contains(e->pos()) )
 	//{
 	//	QString str = QString("%1, %2").arg(e->pos().x()).arg(e->pos().y());
-	//	qWarning(str.toAscii());
+	//	qWarning(str.toLatin1());
 	//}
 }
 
@@ -904,12 +904,12 @@ void QFormulatorEditWindow::initXmlBtnAccel( const HKAccel& accel, int *k )
 		else
 		{
 			if( keyCh.isDigit() )
-				k[j] |= (Qt::Key_0 + keyCh.toAscii() - '0');
-			else if( keyCh.toAscii() >= 'A' && keyCh.toAscii() <= 'Z' )
-				k[j] |= (Qt::Key_A + keyCh.toAscii() - 'A');
+				k[j] |= (Qt::Key_0 + keyCh.toLatin1() - '0');
+			else if( keyCh.toLatin1() >= 'A' && keyCh.toLatin1() <= 'Z' )
+				k[j] |= (Qt::Key_A + keyCh.toLatin1() - 'A');
 			else
 			{
-				switch(keyCh.toAscii())
+				switch(keyCh.toLatin1())
 				{
 				case ' ':
 					k[j] |= Qt::Key_Space;

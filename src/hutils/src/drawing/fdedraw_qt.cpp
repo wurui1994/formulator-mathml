@@ -901,7 +901,7 @@ RealFde CFmlDrawEngineQt::GetTopBearingMin( const FS_LogFont& lf, const QChar* s
 	QFontMetricsF fm( *pFont );
 	QString strUpper = QString( str, len ).toUpper();
 
-	long i, origin = 0;
+	int i, origin = 0;
 	for( i = 0; i < len; i++ )
 	{
 		if( str[ i ] == strUpper[ i ] )

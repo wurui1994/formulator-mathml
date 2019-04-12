@@ -622,7 +622,7 @@ RealFde evalArgCannotDrawFormula( RealFde argument, const QString& coef )
 	double ret = 0.0;
 	if( coef.length() )
 	{
-		switch( coef.at(0).toAscii() )
+		switch( coef.at(0).toLatin1() )
 		{
 		case '*':
 			ret = argument * coef.mid(1).toDouble();

@@ -5,7 +5,7 @@
 TEMPLATE = app
 TARGET = formulator
 DESTDIR = ../../run/debug
-QT += network svg
+QT += network svg printsupport
 CONFIG += debug
 DEFINES += _DEBUG FML_STATIC_LINK QT_SVG_LIB QT_NETWORK_LIB
 INCLUDEPATH += ../../include

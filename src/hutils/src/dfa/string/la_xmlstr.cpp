@@ -187,7 +187,7 @@ void LXMLString::Deeds( void )
 			mnt_int = 0;
 			pre_int = 0;
 		}
-		mnt_int = 16 * mnt_int + hex2dec( character.toAscii() );
+		mnt_int = 16 * mnt_int + hex2dec( character.toLatin1() );
 		if( mnt_int < pre_int )
 			is_big = 1;
 		else

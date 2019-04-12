@@ -30,7 +30,7 @@
 ****************************************************************************/
 
 #include <QtGlobal>
-#include <QtGui>
+#include <QtWidgets>
 
 #include "HUtils/iversion.h"
 #include "HMathML/isettings.h"
@@ -52,7 +52,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 
-QFormulatorMainWindow::QFormulatorMainWindow(bool isEditMode, QWidget *parent, Qt::WFlags flags)
+QFormulatorMainWindow::QFormulatorMainWindow(bool isEditMode, QWidget *parent, Qt::WindowFlags flags)
 	: QMainWindow( parent, flags )
 {
 	QCoreApplication::setOrganizationName(__COMPANY_NAME__);

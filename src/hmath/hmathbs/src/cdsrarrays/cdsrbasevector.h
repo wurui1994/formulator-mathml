@@ -120,7 +120,7 @@ public:
 	// add, insert, erase
 	void add( T value = T() )
 	{
-		push_back( value );
+		std::vector<T>::push_back( value );
 	}
 	void insert( long index, const T& value = T() )
 	{
@@ -141,7 +141,7 @@ public:
 
 	const CDSRBaseVector<T>& operator = ( const CDSRBaseVector<T>& vect )
 	{
-		resize( vect.size() );
+		std::vector<T>::resize( vect.size() );
 		for ( unsigned long i = 0; i < std::vector<T>::size(); i++ )
 			(*this)[ i ] = vect[ i ];
 		return (*this);
