@@ -178,7 +178,7 @@ void _derivativePolinom(CDSRArray<CDSRComplex>* pPolinom, unsigned long nDerivat
 	{
 		unsigned long i, j;
 		unsigned long _size_pol = (unsigned long) pPolinom->size();
-		unsigned long _size = (unsigned long) std::max( (unsigned long) 1, pPolinom->size() - nDerivative );
+		unsigned long _size = (unsigned long) std::max( (unsigned long) 1, (unsigned long) (pPolinom->size() - nDerivative) );
 		pDerivative->resize(_size);
 
 		for( i = 0; i < _size; i++ )

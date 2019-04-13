@@ -199,27 +199,7 @@ extern const QString __mml_char__value[ MML_CHAR__NUMBER ] =
 	_T("\t"),
 	_T(" "),
 
-	// 其他语言的字符
-#if 0
-	_T("?"),
-	_T("-"),
-	_T("?"),
-	_T("i"),
-	_T("?),
-	_T("?),
-	_T("?),
-	_T("?),
-	_T("-"),
-	_T("R"),
-	_T("?),//?
-	_T("?"),
-	_T("<"),
-	_T("?),
-	_T("?),
-	_T("c"),
-	_T("?),
-	_T("?)
-#endif
+	//
 };
 
 extern const QString __mml_char__name[ MML_CHAR__NUMBER ] =

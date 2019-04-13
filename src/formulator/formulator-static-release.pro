@@ -18,9 +18,10 @@ DEPENDPATH +=			\
 	./fmlide/
 MOC_DIR += ./GeneratedFiles/release
 OBJECTS_DIR += ../../build/obj/release/formulator
-LIBS += -lQtCore -lQtGui -lQtNetwork -lQtSvg
 UI_DIR += build/uic
 RCC_DIR += build/rcc
+
+QMAKE_LFLAGS += -static -static-libgcc -static-libstdc++
 
 #Include file(s)
 include(formulator.pri)

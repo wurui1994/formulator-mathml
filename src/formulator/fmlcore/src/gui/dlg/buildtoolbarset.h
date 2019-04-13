@@ -2,7 +2,7 @@
 #define __FMLCORE_DLG_BUILDTOOLBARSETDLG_H__
 
 #include <QtWidgets/QDialog>
-#include "../GeneratedFiles/ui_buildtoolbarset.h"
+#include "ui_buildtoolbarset.h"
 #include "../../fmlcore_global.h"
 
 class __HERMITECH_FORMULIB__ CBuildToolbarsetDlg
