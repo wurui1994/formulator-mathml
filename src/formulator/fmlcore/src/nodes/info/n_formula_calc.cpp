@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QtGlobal>
+#include <QtCore/QtGlobal>
 
 #include "../node.h"
 #include "n_formula_calc.h"
@@ -279,7 +279,7 @@ SizeFde CFormulaExCalc::CalculateSizeByPercents( QVector<RectFde>& rects, QVecto
 		sz.rheight() /= rc.height();
 
 #ifdef Q_WS_WIN
-		// в_сь х
+		// 		
 		itl = m_psx.find( rc.left() );
 		itr = m_psx.find( rc.right() );
 		while( itl != m_psx.end() && itl != itr )
@@ -291,7 +291,7 @@ SizeFde CFormulaExCalc::CalculateSizeByPercents( QVector<RectFde>& rects, QVecto
 				itl->second = sz.width();
 		}
 
-		// в_сь у
+		// 		
 		itl = m_psy.find( rc.top() );
 		itr = m_psy.find( rc.bottom() );
 		while( itl != m_psy.end() && itl != itr )

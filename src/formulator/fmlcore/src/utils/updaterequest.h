@@ -32,8 +32,8 @@
 #ifndef __FMLCORE_UTILS_UPDATEREQUEST_H__
 #define __FMLCORE_UTILS_UPDATEREQUEST_H__
 
-#include <QDialog>
-#include <QBuffer>
+#include <QtWidgets/QDialog>
+#include <QtCore/QBuffer>
 
 QT_BEGIN_NAMESPACE
 class QHttp;

@@ -36,7 +36,7 @@
 #include "drawstruct.h"
 //#include "fdedraw_qt.h"
 
-#include <QPainter>
+#include <QtGui/QPainter>
 #include <stack>
 
 /////////////////////////////////////////////////////////////////////
@@ -66,7 +66,7 @@ public:
 	virtual void GetViewPort( RealFde& width, RealFde& height ) = 0;
 	virtual void SetViewPort( RealFde width, RealFde height ) = 0;
 
-	// трансформации (относительно текущего значения)
+	// 
 	virtual void Identity( void ) = 0;
 	virtual void Multiply( const FdeStateMatrix& sm ) = 0;
 	virtual void Translate( RealFde tx, RealFde ty ) = 0;

@@ -32,7 +32,7 @@
 #if !defined( __BULAN_VMI_CALC_H__ )
 #define __BULAN_VMI_CALC_H__
 
-#include <QVector>
+#include <QtCore/QVector>
 
 #include "HUtils/idrawstruct.h"
 #include "HUtils/iustring.h"

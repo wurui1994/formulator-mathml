@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{494D1AA0-180B-4DF7-822C-8654B7EA4BF2}</ProjectGuid>
+    <RootNamespace>hmathbs</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.28707.177</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../../build/bin/$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>../../../build/obj/$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../../build/bin/$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>../../../build/obj/$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../include;.\src;.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;WIN32;QT_THREAD_SUPPORT;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;HMATHBS_LIB;QT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat />
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../include;.\src;.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;HMATHBS_LIB;QT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cdsrnumbers\BigNumber.cpp" />
+    <ClCompile Include="src\cdsrnumbers\CDSRRational.cpp" />
+    <ClCompile Include="src\hmathbs.cpp" />
+    <ClCompile Include="src\la\eigenval.cpp" />
+    <ClCompile Include="src\la\matrix_internal.cpp" />
+    <ClCompile Include="src\la\slae\common.cpp" />
+    <ClCompile Include="src\la\slae\gauss.cpp" />
+    <ClCompile Include="src\la\slae\jordangauss.cpp" />
+    <ClCompile Include="src\la\slae\lu.cpp" />
+    <ClCompile Include="src\la\slae\reflection.cpp" />
+    <ClCompile Include="src\la\slae\relaxation.cpp" />
+    <ClCompile Include="src\la\slae\rotation.cpp" />
+    <ClCompile Include="src\la\slae\siter.cpp" />
+    <ClCompile Include="src\la\slae\slae_internal.cpp" />
+    <ClCompile Include="src\la\slae\ziter.cpp" />
+    <ClCompile Include="src\numbers\Complex.cpp" />
+    <ClCompile Include="src\numbers\Integer.cpp" />
+    <ClCompile Include="src\numbers\Natural.cpp" />
+    <ClCompile Include="src\numbers\Rational.cpp" />
+    <ClCompile Include="src\polynomial\internalFunc.cpp" />
+    <ClCompile Include="src\polynomial\polina.cpp" />
+    <ClCompile Include="src\rationalfunc\ratfunc.cpp" />
+    <ClCompile Include="src\rationalfunc\rfinternal.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\basexxx.h" />
+    <ClInclude Include="src\cdsrarrays\CDSRArray.h" />
+    <ClInclude Include="src\cdsrarrays\CDSRBaseMatrix.h" />
+    <ClInclude Include="src\cdsrarrays\CDSRBaseVector.h" />
+    <ClInclude Include="src\cdsrarrays\CDSRMatrix.h" />
+    <ClInclude Include="src\cdsrarrays\CDSRMMatrix.h" />
+    <ClInclude Include="src\cdsrarrays\CDSRMVector.h" />
+    <ClInclude Include="src\cdsrnumbers\BigNumber.h" />
+    <ClInclude Include="src\cdsrnumbers\BitSetT2.h" />
+    <ClInclude Include="src\cdsrnumbers\CDSRComplex.h" />
+    <ClInclude Include="src\cdsrnumbers\CDSRInteger.h" />
+    <ClInclude Include="src\cdsrnumbers\CDSRNatural.h" />
+    <ClInclude Include="src\cdsrnumbers\CDSRRational.h" />
+    <ClInclude Include="src\cdsrnumbers\CDSRReal.h" />
+    <ClInclude Include="src\cdsrnumbers\mathconst.h" />
+    <ClInclude Include="src\cdsrnumbers\number.h" />
+    <ClInclude Include="src\hmathbs.h" />
+    <ClInclude Include="src\hmathbs_global.h" />
+    <ClInclude Include="src\la\eigenval.h" />
+    <ClInclude Include="src\la\matrix_internal.h" />
+    <ClInclude Include="src\la\slae\common.h" />
+    <ClInclude Include="src\la\slae\gauss.h" />
+    <ClInclude Include="src\la\slae\jordangauss.h" />
+    <ClInclude Include="src\la\slae\lu.h" />
+    <ClInclude Include="src\la\slae\reflection.h" />
+    <ClInclude Include="src\la\slae\relaxation.h" />
+    <ClInclude Include="src\la\slae\rotation.h" />
+    <ClInclude Include="src\la\slae\siter.h" />
+    <ClInclude Include="src\la\slae\slae_internal.h" />
+    <ClInclude Include="src\la\slae\ziter.h" />
+    <ClInclude Include="src\numbers\BitSetT.h" />
+    <ClInclude Include="src\numbers\Complex.h" />
+    <ClInclude Include="src\numbers\Integer.h" />
+    <ClInclude Include="src\numbers\Natural.h" />
+    <ClInclude Include="src\numbers\Rational.h" />
+    <ClInclude Include="src\polynomial\internalFunc.h" />
+    <ClInclude Include="src\polynomial\polina.h" />
+    <ClInclude Include="src\rationalfunc\ratfunc.h" />
+    <ClInclude Include="src\rationalfunc\rfinternal.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" QtVersion="4.5.2" MocOptions="" QtVersion_x0020_Win32="$(DefaultQtVersion)" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

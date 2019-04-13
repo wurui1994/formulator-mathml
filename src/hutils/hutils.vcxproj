@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A22D04B4-BD20-47AD-AE1D-1C5D9CDE7819}</ProjectGuid>
+    <RootNamespace>hutils</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.28707.177</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../build/bin/$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>../../build/obj/$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../build/bin/$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>../../build/obj/$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../include;.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;WIN32;QT_THREAD_SUPPORT;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;HUTILS_LIB;QT_GUI_LIB;QT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat />
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../include;.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;HUTILS_LIB;QT_GUI_LIB;QT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\cc\baselex.h" />
+    <ClInclude Include="src\cc\basepars.h" />
+    <ClInclude Include="src\cc\source.h" />
+    <ClInclude Include="src\collection\HKArray.h" />
+    <ClInclude Include="src\collection\HKFlag.h" />
+    <ClInclude Include="src\collection\HKMap.h" />
+    <ClInclude Include="src\collection\HKString.h" />
+    <ClInclude Include="src\dfa\dfas.h" />
+    <ClInclude Include="src\dfa\digit\la_digit.h" />
+    <ClInclude Include="src\dfa\digit\la_sdigit.h" />
+    <ClInclude Include="src\dfa\digit\la_sdigit_base.h" />
+    <ClInclude Include="src\dfa\digit\la_xmlattr_sdigit.h" />
+    <ClInclude Include="src\dfa\dsr2_var\la_dsr2var.h" />
+    <ClInclude Include="src\dfa\entity\la_entity.h" />
+    <ClInclude Include="src\dfa\keyword\la_keyword.h" />
+    <ClInclude Include="src\dfa\limauto.h" />
+    <ClInclude Include="src\dfa\string\la_str.h" />
+    <ClInclude Include="src\dfa\string\la_xmlstr.h" />
+    <ClInclude Include="src\dfa\var\la_cvar.h" />
+    <ClInclude Include="src\dfa\var\la_xmlvar.h" />
+    <ClInclude Include="src\drawing\drawengine.h" />
+    <ClInclude Include="src\drawing\drawstruct.h" />
+    <ClInclude Include="src\drawing\fdedraw_qt.h" />
+    <ClInclude Include="src\gui\acceler.h" />
+    <ClInclude Include="src\gui\toolbar.h" />
+    <ClInclude Include="src\hutils.h" />
+    <ClInclude Include="src\hutils_global.h" />
+    <ClInclude Include="src\memory\autoheap.h" />
+    <ClInclude Include="src\property\ctrl_template.h" />
+    <ClInclude Include="src\property\ctrl_type.h" />
+    <ClInclude Include="src\property\fastparam.h" />
+    <ClInclude Include="src\property\internal_property.h" />
+    <ClInclude Include="src\property\param.h" />
+    <ClInclude Include="src\property\tags.h" />
+    <ClInclude Include="src\property\visual_param.h" />
+    <ClInclude Include="src\utils\htmlcolor.h" />
+    <ClInclude Include="src\utils\linemsg.h" />
+    <ClInclude Include="src\utils\loadimage.h" />
+    <ClInclude Include="src\utils\message.h" />
+    <ClInclude Include="src\utils\template.h" />
+    <CustomBuild Include="src\utils\undoredo.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -D_UNICODE -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_CORE_LIB -DHUTILS_LIB -DQT_GUI_LIB -DQT_DLL -D_WINDLL  -I".\..\..\include\." -I".\GeneratedFiles\." -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I"$(QTDIR)\include\QtGui\." ".\src\utils\undoredo.h" -o ".\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Filename)%(Extension)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -D_UNICODE -DUNICODE -DWIN32 -DQT_THREAD_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DHUTILS_LIB -DQT_GUI_LIB -DQT_DLL -D_WINDLL  -I".\..\..\include\." -I".\GeneratedFiles\." -I"$(QTDIR)\include\." -I".\GeneratedFiles\$(Configuration)\." -I"$(QTDIR)\include\QtCore\." -I"$(QTDIR)\include\QtGui\." ".\src\utils\undoredo.h" -o ".\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="src\utils\ustring.h" />
+    <ClInclude Include="src\version\companyinfo.h" />
+    <ClInclude Include="src\version\version.h" />
+    <ClInclude Include="src\xml\parse\grammar.h" />
+    <ClInclude Include="src\xml\parse\parserxml.h" />
+    <ClInclude Include="src\xml\parse\thelexxml.h" />
+    <ClInclude Include="src\xml\xml.h" />
+    <ClInclude Include="src\xml\xml_tree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\debug\moc_undoredo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_undoredo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\cc\baselex.cpp" />
+    <ClCompile Include="src\cc\basepars.cpp" />
+    <ClCompile Include="src\collection\HKMap.cpp" />
+    <ClCompile Include="src\dfa\dfas.cpp" />
+    <ClCompile Include="src\dfa\digit\la_digit.cpp" />
+    <ClCompile Include="src\dfa\digit\la_sdigit.cpp" />
+    <ClCompile Include="src\dfa\digit\la_sdigit_base.cpp" />
+    <ClCompile Include="src\dfa\digit\la_xmlattr_sdigit.cpp" />
+    <ClCompile Include="src\dfa\dsr2_var\la_dsr2var.cpp" />
+    <ClCompile Include="src\dfa\entity\la_entity.cpp" />
+    <ClCompile Include="src\dfa\keyword\la_keyword.cpp" />
+    <ClCompile Include="src\dfa\limauto.cpp" />
+    <ClCompile Include="src\dfa\string\la_str.cpp" />
+    <ClCompile Include="src\dfa\string\la_xmlstr.cpp" />
+    <ClCompile Include="src\dfa\var\la_cvar.cpp" />
+    <ClCompile Include="src\dfa\var\la_xmlvar.cpp" />
+    <ClCompile Include="src\drawing\drawengine.cpp" />
+    <ClCompile Include="src\drawing\fdedraw_qt.cpp" />
+    <ClCompile Include="src\hutils.cpp" />
+    <ClCompile Include="src\property\ctrl_template.cpp" />
+    <ClCompile Include="src\property\fastparam.cpp" />
+    <ClCompile Include="src\property\param.cpp" />
+    <ClCompile Include="src\property\visual_param.cpp" />
+    <ClCompile Include="src\utils\htmlcolor.cpp" />
+    <ClCompile Include="src\utils\loadimage.cpp" />
+    <ClCompile Include="src\utils\message.cpp" />
+    <ClCompile Include="src\utils\template.cpp" />
+    <ClCompile Include="src\utils\undoredo.cpp" />
+    <ClCompile Include="src\utils\ustring.cpp" />
+    <ClCompile Include="src\xml\parse\parserxml.cpp" />
+    <ClCompile Include="src\xml\parse\thelexxml.cpp" />
+    <ClCompile Include="src\xml\xml.cpp" />
+    <ClCompile Include="src\xml\xml_tree.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" QtVersion="4.5.2" MocOptions="" QtVersion_x0020_Win32="$(DefaultQtVersion)" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

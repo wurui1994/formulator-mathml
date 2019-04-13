@@ -1,0 +1,843 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{3d07bbd9-b79d-4108-9153-1f694494d95d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mathml">
+      <UniqueIdentifier>{6deecc46-ddd5-45aa-8d9e-3b73e05ad656}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\style">
+      <UniqueIdentifier>{90ae805d-3f30-45d0-9069-2c84d3446383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\settings">
+      <UniqueIdentifier>{061b8e98-d262-4cee-a3a8-6e4291b355db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\button">
+      <UniqueIdentifier>{e1169829-2214-446d-b5fb-e82bf5977787}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\button\calc">
+      <UniqueIdentifier>{17279fc8-e1cd-4856-90c5-535022c7a773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\dictionary">
+      <UniqueIdentifier>{3551a825-f242-4cd7-842c-762f4170503c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\crypto">
+      <UniqueIdentifier>{bcd410c7-1acd-473b-8374-e7f12ff2d9c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\graphics">
+      <UniqueIdentifier>{13286349-f1d8-44f9-81a4-1fb7e1e96b1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nodes">
+      <UniqueIdentifier>{2e1d3cdb-8d77-425d-89d1-0873c25dc1c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nodes\dump">
+      <UniqueIdentifier>{85a414d3-5a15-4739-bc7f-31560c54097b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nodes\info">
+      <UniqueIdentifier>{a7c1074c-4c13-4aa4-b316-3e7ed6fd0524}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nodes\extcontent">
+      <UniqueIdentifier>{d488544a-eb91-45ad-8f21-649588cee16a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nodes\mathml">
+      <UniqueIdentifier>{07834219-fb99-40d2-979a-bc4e7df1cdc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nodes\rules">
+      <UniqueIdentifier>{a9580d9d-baca-4e52-8ec7-4bd8d0ab2c89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nodes\root">
+      <UniqueIdentifier>{03fc98a2-3d6f-4109-b668-2800b25fef3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nodes\brackets">
+      <UniqueIdentifier>{5061b575-57f9-4216-850e-2ce51939086d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gui">
+      <UniqueIdentifier>{8a65b469-6822-4938-9424-5d7223070d83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gui\document">
+      <UniqueIdentifier>{6aa44ccc-cc03-48eb-a0f5-7f6558522ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gui\widget">
+      <UniqueIdentifier>{d3bae5b6-8a55-44fe-95f3-838ca7ffdfc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gui\window">
+      <UniqueIdentifier>{0718e0c8-c92a-4e37-9fcb-c2c451bcdb06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gui\dlg">
+      <UniqueIdentifier>{9417deab-ed38-4bb3-b31a-422efbaabe25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gui\dlg\characterdlg">
+      <UniqueIdentifier>{657341b1-05f2-46f5-adad-38910d32f193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gui\dlg\formatdlg">
+      <UniqueIdentifier>{58eb3488-ac02-4106-9009-35090ca5417e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gui\dlg\optionsdlg">
+      <UniqueIdentifier>{8666a1fa-4b77-466e-b4f4-b37c3f79f22e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gui\textedit">
+      <UniqueIdentifier>{f4563611-c0b7-4888-9ca8-b420c1fe051a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gui\viewer">
+      <UniqueIdentifier>{38c9b392-d74e-41ab-87a8-1085167c83b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gui\renderer">
+      <UniqueIdentifier>{fcbe0e4f-341f-4c44-b052-067198866213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils">
+      <UniqueIdentifier>{709d0c37-8bbf-4d4c-a25f-144d7a1c529f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test">
+      <UniqueIdentifier>{351fd94e-702d-4c42-b751-9113b79259b9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\Debug\moc_buildtoolbarset.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_buildtoolbarset.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_characterdlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_characterdlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_characterwidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_characterwidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_configdlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_configdlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_configpages.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_configpages.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_definesizedlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_definesizedlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_definestyledlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_definestyledlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fmleditwidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fmleditwidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fmleditwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fmleditwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fmlmainwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fmlmainwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_fmlrenderer.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\release\moc_fmlrenderer.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fmlviewwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fmlviewwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fmlwidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fmlwidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mathmlhighlighter.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mathmlhighlighter.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mmlfileviewerwidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mmlfileviewerwidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mmltexteditwidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mmltexteditwidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_otherstyledlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_otherstyledlg.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_pagesetup.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_pagesetup.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_updaterequest.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_updaterequest.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_fmlcore.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cfmlcore.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mathml\la_mmlchar.cpp">
+      <Filter>src\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mathml\mml_char.cpp">
+      <Filter>src\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mathml\mml_format.cpp">
+      <Filter>src\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mathml\mml_operator.cpp">
+      <Filter>src\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mathml\mml_style.cpp">
+      <Filter>src\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mathml\mml_tag2mml.cpp">
+      <Filter>src\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mathml\mml_uchar.cpp">
+      <Filter>src\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mathml\mml_units.cpp">
+      <Filter>src\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\style\style.cpp">
+      <Filter>src\style</Filter>
+    </ClCompile>
+    <ClCompile Include="src\settings\options.cpp">
+      <Filter>src\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\btn.cpp">
+      <Filter>src\button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\btn_attr.cpp">
+      <Filter>src\button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\btn_childpos.cpp">
+      <Filter>src\button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\btn_graphics.cpp">
+      <Filter>src\button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\btn_mmldata.cpp">
+      <Filter>src\button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\toolbar.cpp">
+      <Filter>src\button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\toolbarset.cpp">
+      <Filter>src\button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\xmlbtn.cpp">
+      <Filter>src\button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\calc\bulanapi.cpp">
+      <Filter>src\button\calc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\calc\la_iden.cpp">
+      <Filter>src\button\calc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\calc\parser.cpp">
+      <Filter>src\button\calc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\calc\thelex.cpp">
+      <Filter>src\button\calc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\calc\vmi.cpp">
+      <Filter>src\button\calc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\calc\vmi_calc.cpp">
+      <Filter>src\button\calc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\button\calc\vmi_picode.cpp">
+      <Filter>src\button\calc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dictionary\entity_map.cpp">
+      <Filter>src\dictionary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dictionary\op_autokeyword.cpp">
+      <Filter>src\dictionary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dictionary\op_iddefs.cpp">
+      <Filter>src\dictionary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dictionary\op_map.cpp">
+      <Filter>src\dictionary</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypto\crypto.cpp">
+      <Filter>src\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\baseratio.cpp">
+      <Filter>src\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\r_arc.cpp">
+      <Filter>src\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\r_bspl.cpp">
+      <Filter>src\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\r_bspl_ex.cpp">
+      <Filter>src\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\r_formula.cpp">
+      <Filter>src\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\r_line.cpp">
+      <Filter>src\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\r_rect.cpp">
+      <Filter>src\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graphics\r_text.cpp">
+      <Filter>src\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\ni_formula.cpp">
+      <Filter>src\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\ni_frame.cpp">
+      <Filter>src\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\ni_line.cpp">
+      <Filter>src\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\ni_parent.cpp">
+      <Filter>src\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\ni_planetext.cpp">
+      <Filter>src\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\node.cpp">
+      <Filter>src\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\node2proplist.cpp">
+      <Filter>src\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\node2xmlbtn.cpp">
+      <Filter>src\nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\dump\dumptags.cpp">
+      <Filter>src\nodes\dump</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\info\n_formula_calc.cpp">
+      <Filter>src\nodes\info</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\info\n_proplist.cpp">
+      <Filter>src\nodes\info</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\info\n_proplist_valref.cpp">
+      <Filter>src\nodes\info</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\info\nodeexinfo.cpp">
+      <Filter>src\nodes\info</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\info\nodeinfo_property.cpp">
+      <Filter>src\nodes\info</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\extcontent\ext_node.cpp">
+      <Filter>src\nodes\extcontent</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\extcontent\ext_nodemngr.cpp">
+      <Filter>src\nodes\extcontent</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\extcontent\extc_img.cpp">
+      <Filter>src\nodes\extcontent</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\extcontent\extc_test.cpp">
+      <Filter>src\nodes\extcontent</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\mathml\n_cm_treetemplate.cpp">
+      <Filter>src\nodes\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\mathml\n_rmml.cpp">
+      <Filter>src\nodes\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\mathml\n_rmml_cm.cpp">
+      <Filter>src\nodes\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\mathml\n_rmml_cm_apply.cpp">
+      <Filter>src\nodes\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\mathml\n_rmml_cm_aspec.cpp">
+      <Filter>src\nodes\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\mathml\n_rmml_cm_construct.cpp">
+      <Filter>src\nodes\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\mathml\n_rmml_cm_diff.cpp">
+      <Filter>src\nodes\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\mathml\n_rmml_cm_token.cpp">
+      <Filter>src\nodes\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\mathml\n_rmml_pm_formula.cpp">
+      <Filter>src\nodes\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\mathml\n_rmml_pm_token.cpp">
+      <Filter>src\nodes\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\mathml\n_rmml_pm_underover.cpp">
+      <Filter>src\nodes\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\mathml\n_wmml.cpp">
+      <Filter>src\nodes\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\mathml\n_wmml_cm_formula.cpp">
+      <Filter>src\nodes\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\mathml\n_wmml_formula.cpp">
+      <Filter>src\nodes\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\mathml\n_wmml_text.cpp">
+      <Filter>src\nodes\mathml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\rules\appstyle.cpp">
+      <Filter>src\nodes\rules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\rules\copy.cpp">
+      <Filter>src\nodes\rules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\rules\edit.cpp">
+      <Filter>src\nodes\rules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\rules\insert.cpp">
+      <Filter>src\nodes\rules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\rules\la_insertstyle.cpp">
+      <Filter>src\nodes\rules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\rules\mouse.cpp">
+      <Filter>src\nodes\rules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\rules\movstruc.cpp">
+      <Filter>src\nodes\rules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\rules\nav.cpp">
+      <Filter>src\nodes\rules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\rules\sel.cpp">
+      <Filter>src\nodes\rules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\ni_root.cpp">
+      <Filter>src\nodes\root</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\ni_root_input.cpp">
+      <Filter>src\nodes\root</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nodes\ni_brackets.cpp">
+      <Filter>src\nodes\brackets</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\document\fmldocument.cpp">
+      <Filter>src\gui\document</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\widget\fmleditwidget.cpp">
+      <Filter>src\gui\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\widget\fmlwidget.cpp">
+      <Filter>src\gui\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\window\fmleditwindow.cpp">
+      <Filter>src\gui\window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\window\fmlmainwindow.cpp">
+      <Filter>src\gui\window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\window\fmlviewwindow.cpp">
+      <Filter>src\gui\window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlg\buildtoolbarset.cpp">
+      <Filter>src\gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlg\nodeinputdlg.cpp">
+      <Filter>src\gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlg\pagesetup.cpp">
+      <Filter>src\gui\dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlg\charactermap\characterdlg.cpp">
+      <Filter>src\gui\dlg\characterdlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlg\charactermap\characterwidget.cpp">
+      <Filter>src\gui\dlg\characterdlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlg\definesizedlg.cpp">
+      <Filter>src\gui\dlg\formatdlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlg\definestyledlg.cpp">
+      <Filter>src\gui\dlg\formatdlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlg\otherstyledlg.cpp">
+      <Filter>src\gui\dlg\formatdlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlg\config\configdlg.cpp">
+      <Filter>src\gui\dlg\optionsdlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\dlg\config\configpages.cpp">
+      <Filter>src\gui\dlg\optionsdlg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\textedit\mathmlhighlighter.cpp">
+      <Filter>src\gui\textedit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\textedit\mmltexteditwidget.cpp">
+      <Filter>src\gui\textedit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\viewer\mmlfileviewerwidget.cpp">
+      <Filter>src\gui\viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\renderer\fmlrenderer.cpp">
+      <Filter>src\gui\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\evaluate.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\updaterequest.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test\dir2html.cpp">
+      <Filter>src\test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_buildtoolbarset.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cfmlcore.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fmlcore_global.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mathml\la_mmlchar.h">
+      <Filter>src\mathml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mathml\mml_char.h">
+      <Filter>src\mathml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mathml\mml_defs.h">
+      <Filter>src\mathml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mathml\mml_format.h">
+      <Filter>src\mathml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mathml\mml_operator.h">
+      <Filter>src\mathml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mathml\mml_style.h">
+      <Filter>src\mathml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mathml\mml_tag2mml.h">
+      <Filter>src\mathml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mathml\mml_uchar.h">
+      <Filter>src\mathml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mathml\mml_units.h">
+      <Filter>src\mathml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\style\style.h">
+      <Filter>src\style</Filter>
+    </ClInclude>
+    <ClInclude Include="src\settings\options.h">
+      <Filter>src\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="src\settings\setdefs.h">
+      <Filter>src\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="src\settings\settings.h">
+      <Filter>src\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\btn.h">
+      <Filter>src\button</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\btn_attr.h">
+      <Filter>src\button</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\btn_childpos.h">
+      <Filter>src\button</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\btn_graphics.h">
+      <Filter>src\button</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\btn_mmldata.h">
+      <Filter>src\button</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\btn_tags.h">
+      <Filter>src\button</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\toolbar.h">
+      <Filter>src\button</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\toolbarset.h">
+      <Filter>src\button</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\xmlbtn.h">
+      <Filter>src\button</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\calc\ast.h">
+      <Filter>src\button\calc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\calc\bulanapi.h">
+      <Filter>src\button\calc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\calc\grammar.h">
+      <Filter>src\button\calc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\calc\la_iden.h">
+      <Filter>src\button\calc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\calc\parser.h">
+      <Filter>src\button\calc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\calc\thelex.h">
+      <Filter>src\button\calc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\calc\vmi.h">
+      <Filter>src\button\calc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\calc\vmi_calc.h">
+      <Filter>src\button\calc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\button\calc\vmi_picode.h">
+      <Filter>src\button\calc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dictionary\entity_map.h">
+      <Filter>src\dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dictionary\op_autokeyword.h">
+      <Filter>src\dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dictionary\op_iddefs.h">
+      <Filter>src\dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dictionary\op_map.h">
+      <Filter>src\dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="src\crypto\crypto.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\crypto\keygen.h">
+      <Filter>src\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graphics\baseratio.h">
+      <Filter>src\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\node.h">
+      <Filter>src\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\node2proplist.h">
+      <Filter>src\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\dump\dumptags.h">
+      <Filter>src\nodes\dump</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\info\n_formula_calc.h">
+      <Filter>src\nodes\info</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\info\n_proplist.h">
+      <Filter>src\nodes\info</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\info\nodeexinfo.h">
+      <Filter>src\nodes\info</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\info\nodeinfo.h">
+      <Filter>src\nodes\info</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\info\nodeinfo_property.h">
+      <Filter>src\nodes\info</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\info\selectnode.h">
+      <Filter>src\nodes\info</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\extcontent\ext_node.h">
+      <Filter>src\nodes\extcontent</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\extcontent\ext_nodemngr.h">
+      <Filter>src\nodes\extcontent</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\extcontent\extc_classid.h">
+      <Filter>src\nodes\extcontent</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\extcontent\extc_img.h">
+      <Filter>src\nodes\extcontent</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\extcontent\extc_test.h">
+      <Filter>src\nodes\extcontent</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\mathml\n_cm_treetemplate.h">
+      <Filter>src\nodes\mathml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\mathml\n_rmml_cm.h">
+      <Filter>src\nodes\mathml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\rules\appstyle.h">
+      <Filter>src\nodes\rules</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\rules\copy.h">
+      <Filter>src\nodes\rules</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\rules\edit.h">
+      <Filter>src\nodes\rules</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\rules\insert.h">
+      <Filter>src\nodes\rules</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\rules\la_insertstyle.h">
+      <Filter>src\nodes\rules</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\rules\mouse.h">
+      <Filter>src\nodes\rules</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\rules\movstruc.h">
+      <Filter>src\nodes\rules</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\rules\nav.h">
+      <Filter>src\nodes\rules</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\rules\sel.h">
+      <Filter>src\nodes\rules</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\ni_root.h">
+      <Filter>src\nodes\root</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nodes\ni_brackets.h">
+      <Filter>src\nodes\brackets</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\document\fmldocument.h">
+      <Filter>src\gui\document</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\widget\fmlbasewidget.h">
+      <Filter>src\gui\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\dlg\nodeinputdlg.h">
+      <Filter>src\gui\dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\evaluate.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\test\dir2html.h">
+      <Filter>src\test</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\gui\dlg\buildtoolbarset.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fmlcore.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\widget\fmleditwidget.h">
+      <Filter>src\gui\widget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\widget\fmlwidget.h">
+      <Filter>src\gui\widget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\window\fmleditwindow.h">
+      <Filter>src\gui\window</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\window\fmlmainwindow.h">
+      <Filter>src\gui\window</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\window\fmlviewwindow.h">
+      <Filter>src\gui\window</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dlg\buildtoolbarset.h">
+      <Filter>src\gui\dlg</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dlg\pagesetup.h">
+      <Filter>src\gui\dlg</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dlg\charactermap\characterdlg.h">
+      <Filter>src\gui\dlg\characterdlg</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dlg\charactermap\characterwidget.h">
+      <Filter>src\gui\dlg\characterdlg</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dlg\definesizedlg.h">
+      <Filter>src\gui\dlg\formatdlg</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dlg\definestyledlg.h">
+      <Filter>src\gui\dlg\formatdlg</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dlg\otherstyledlg.h">
+      <Filter>src\gui\dlg\formatdlg</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dlg\config\configdlg.h">
+      <Filter>src\gui\dlg\optionsdlg</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\dlg\config\configpages.h">
+      <Filter>src\gui\dlg\optionsdlg</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\textedit\mathmlhighlighter.h">
+      <Filter>src\gui\textedit</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\textedit\mmltexteditwidget.h">
+      <Filter>src\gui\textedit</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\viewer\mmlfileviewerwidget.h">
+      <Filter>src\gui\viewer</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\gui\renderer\fmlrenderer.h">
+      <Filter>src\gui\renderer</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\utils\updaterequest.h">
+      <Filter>src\utils</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

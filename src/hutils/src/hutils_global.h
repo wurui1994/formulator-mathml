@@ -1,7 +1,7 @@
 #ifndef HUTILS_GLOBAL_H
 #define HUTILS_GLOBAL_H
 
-#include <qglobal.h>
+#include <QtCore/QtGlobal>
 
 #ifndef FML_STATIC_LINK
 #ifdef HUTILS_LIB

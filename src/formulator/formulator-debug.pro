@@ -4,7 +4,7 @@
 
 TEMPLATE = app
 TARGET = formulator
-DESTDIR = ../../run/debug
+DESTDIR = ../../build/bin/debug
 QT += network svg printsupport
 CONFIG += debug
 DEFINES += _DEBUG FML_STATIC_LINK QT_SVG_LIB QT_NETWORK_LIB
@@ -15,10 +15,10 @@ DEPENDPATH +=			\
 	../hmath/hmathast/	\
 	./fmlcore/			\
 	./fmlide/
-MOC_DIR += ./GeneratedFiles/debug
-OBJECTS_DIR += ../../int/debug/formulator
-UI_DIR += ./GeneratedFiles
-RCC_DIR += ./GeneratedFiles
+MOC_DIR += build/moc
+OBJECTS_DIR += ../../build/obj/debug/formulator
+UI_DIR += build/uic
+RCC_DIR += build/rcc
 
 #Include file(s)
 include(formulator.pri)

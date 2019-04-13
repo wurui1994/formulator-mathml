@@ -34,17 +34,17 @@
 
 #include "drawengine.h"
 
-#include <QPicture>
-#include <QFont>
-#include <QBrush>
-#include <QPen>
-#include <QImage>
-#include <QTextOption>
-#include <QMatrix>
-#include <QTransform>
-#include <QRectF>
-#include <QFontMetrics>
-#include <QPainterPath>
+#include <QtGui/QPicture>
+#include <QtGui/QFont>
+#include <QtGui/QBrush>
+#include <QtGui/QPen>
+#include <QtGui/QImage>
+#include <QtGui/QTextOption>
+#include <QtGui/QMatrix>
+#include <QtGui/QTransform>
+#include <QtCore/QRectF>
+#include <QtGui/QFontMetrics>
+#include <QtGui/QPainterPath>
 
 #include <map>
 
@@ -67,7 +67,7 @@ public:
 	virtual void GetViewPort( RealFde& width, RealFde& height );
 	virtual void SetViewPort( RealFde width, RealFde height );
 
-	// трансформации (относительно текущего значения)
+	// трансформаци?(относительно текущего значен?)
 	virtual void Identity( void );
 	virtual void Multiply( const FdeStateMatrix& sm );
 	virtual void Translate( RealFde tx, RealFde ty );

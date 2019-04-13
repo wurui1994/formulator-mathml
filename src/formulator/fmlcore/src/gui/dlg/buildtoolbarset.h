@@ -1,7 +1,7 @@
 #ifndef __FMLCORE_DLG_BUILDTOOLBARSETDLG_H__
 #define __FMLCORE_DLG_BUILDTOOLBARSETDLG_H__
 
-#include <QDialog>
+#include <QtWidgets/QDialog>
 #include "../GeneratedFiles/ui_buildtoolbarset.h"
 #include "../../fmlcore_global.h"
 

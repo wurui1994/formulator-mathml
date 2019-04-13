@@ -95,7 +95,7 @@ public:
 		return m_col;
 	}
 
-	// ��������� ��� �������������
+	//
 	long n_row() const
 	{
 		return row();
@@ -331,10 +331,10 @@ public:
 
 	bool operator == ( const CDSRBaseMatrix<T>& matrix )
 	{
-		// �������� �� ��, ����� �� ����������� ������
+		// 
 		if ( m_row != matrix.m_row || m_col != matrix.m_col )
 			return false;
-		// �������� �� ��������� ��������� ������
+		// 
 		long i, j;
 		for ( i = 0; i < m_row; i++ )
 			for ( j = 0; j < m_col; j++ )
@@ -370,7 +370,7 @@ public:
 	{
 		return column( col );
 	}
-	// ��������� ��� �������������
+	//
 	CDSRBaseVector<T>* column( long col )
 	{
 #ifdef _DEBUG

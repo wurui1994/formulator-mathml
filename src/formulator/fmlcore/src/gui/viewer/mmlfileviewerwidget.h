@@ -32,10 +32,10 @@
 #ifndef __FMLCORE_DLG_MATHMLFILEVIEWER_H__
 #define __FMLCORE_DLG_MATHMLFILEVIEWER_H__
 
-#include <QDockWidget>
-#include <QDirModel>
-#include <QTreeView>
-#include <QDir>
+#include <QtWidgets/QDockWidget>
+#include <QtWidgets/QDirModel>
+#include <QtWidgets/QTreeView>
+#include <QtCore/QDir>
 
 QT_BEGIN_NAMESPACE
 class QToolButton;

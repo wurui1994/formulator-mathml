@@ -32,7 +32,7 @@
 #ifndef FMLCORE_GLOBAL_H
 #define FMLCORE_GLOBAL_H
 
-#include <qglobal.h>
+#include <QtCore/QtGlobal>
 
 #ifndef FML_STATIC_LINK
 #ifdef FMLCORE_LIB

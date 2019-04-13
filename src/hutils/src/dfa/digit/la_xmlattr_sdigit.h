@@ -53,13 +53,13 @@ public :
 	LXMLSizeSDigit( void );
 	int	isBig( void );
 
-	double			mnt_float;	// мантисса для вещ. константы
-	unsigned long	pre_int;	// константа целого типа
-	unsigned long	mnt_int;	// константа целого типа
-	short int		power;		// степень
-	short int		asign;		// знак
+	double			mnt_float;	// 
+	unsigned long	pre_int;	// 
+	unsigned long	mnt_int;	// 
+	short int		power;		// 
+	short int		asign;		// 
 	short int		is_big;		// 
-	short int		decimal;	// decimal
+	short int		decimal;	// 
 
 protected:
 

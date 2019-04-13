@@ -34,8 +34,8 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 
-#include <QVector>
-#include <QString>
+#include <QtCore/QVector>
+#include <QtCore/QString>
 
 #include <vector>
 

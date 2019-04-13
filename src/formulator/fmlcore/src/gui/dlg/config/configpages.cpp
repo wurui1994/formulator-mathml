@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QtGui>
+#include <QtGui/QtGui>
 
 #include "HMathML/isettings.h"
 #include "configpages.h"

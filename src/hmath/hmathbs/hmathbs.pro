@@ -4,18 +4,18 @@
 
 TEMPLATE = lib
 TARGET = hmathbs
-DESTDIR = /mmlsoft/run/debug
+DESTDIR = /mmlsoft/build/bin/debug
 CONFIG += debug
 DEFINES += _UNICODE HMATHBS_LIB
-INCLUDEPATH += /mmlsoft/include \
+INCLUDEPATH += include \
     ./GeneratedFiles \
     ./GeneratedFiles/Debug
-LIBPATH += d:/mmlsoft/run/debug
+LIBPATH += build/bin/debug
 DEPENDPATH += .
-MOC_DIR += ./GeneratedFiles/debug
-OBJECTS_DIR += /mmlsoft/int/debug/hmathbs
-UI_DIR += ./GeneratedFiles
-RCC_DIR += ./GeneratedFiles
+MOC_DIR += build/moc
+OBJECTS_DIR += build/obj/debug/hmathbs
+UI_DIR += build/uic
+RCC_DIR += build/rcc
 
 #Include file(s)
 include(hmathbs.pri)

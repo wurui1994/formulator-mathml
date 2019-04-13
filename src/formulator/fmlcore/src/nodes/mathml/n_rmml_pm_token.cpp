@@ -32,7 +32,7 @@
 #include "HUtils/idfas.h"
 #include "../../dictionary/op_map.h"
 #include "../../dictionary/entity_map.h"
-#include "../../mathml/mml_style.h"
+//#include "../../mathml/mml_style.h"
 #include "n_cm_treetemplate.h"
 #include "../node.h"
 #include "../extcontent/ext_node.h"
@@ -66,7 +66,7 @@ CNode* CLineNode::InsertMMLTokenNode( AST_TXML_Tag *node, std::vector<CPlaneText
 
 	node->formatBlank();
 	body = node->getText();
-	struct HMathMLAttr mml_attr( node->getTagName(), body );
+	HMathMLAttr mml_attr( node->getTagName(), body );
    	CNodeExInfo ex_ni;
 	CNodeInfo ni;
 	if( ::mml_is_mglyph_tag( node->getTagName() ) )

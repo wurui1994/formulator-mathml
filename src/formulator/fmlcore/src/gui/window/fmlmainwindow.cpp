@@ -29,8 +29,8 @@
 **
 ****************************************************************************/
 
-#include <QtGlobal>
-#include <QtWidgets>
+#include <QtCore/QtGlobal>
+#include <QtWidgets/QtWidgets>
 
 #include "HUtils/iversion.h"
 #include "HMathML/isettings.h"
@@ -107,6 +107,8 @@ QFormulatorMainWindow::QFormulatorMainWindow(bool isEditMode, QWidget *parent, Q
 
 	newFile();
 	automaticCheckUpdate();
+
+	setAcceptDrops(true);
 }
 
 void QFormulatorMainWindow::initGui( bool isEditMode )
@@ -1696,6 +1698,37 @@ void QFormulatorMainWindow::updateUI_OnOptionsChanged()
 	QFormulatorWidget *child = activeViewWidget();
 	if( child ) child->setMmlChanged( true );
 	updateMmlEditor( true );
+}
+
+void QFormulatorMainWindow::dragEnterEvent(QDragEnterEvent* event)
+{
+	if (event->mimeData()->hasUrls() || event->mimeData()->hasText())
+	{
+		event->acceptProposedAction();
+	}
+}
+
+void QFormulatorMainWindow::dropEvent(QDropEvent* event)
+{
+	const QMimeData* mimeData = event->mimeData();
+	if (mimeData->hasUrls()) // urls
+	{
+		for (QUrl& url : mimeData->urls())
+		{
+			if (url.isLocalFile())
+			{
+				openFileForView(url.toLocalFile());
+			}
+			else
+			{
+				openFileForView(url.url());
+			}
+		}
+	}
+	else if (mimeData->hasText()) // text
+	{
+		openFileForView(mimeData->text());
+	}
 }
 
 /////////////////////////////////////////////////////////////////////////////

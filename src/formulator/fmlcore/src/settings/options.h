@@ -34,7 +34,7 @@
 
 //#include <QString>
 //#include <QDataStream>
-#include <QLocale>
+#include <QtCore/QLocale>
 #include <vector>
 
 #include "HUtils/ihkflag.h"

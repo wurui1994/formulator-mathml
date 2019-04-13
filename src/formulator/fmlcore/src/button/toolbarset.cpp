@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QFile>
+#include <QtCore/QFile>
 #include "HUtils/idfas.h"
 #include "../dictionary/op_map.h"
 #include "../mathml/la_mmlchar.h"

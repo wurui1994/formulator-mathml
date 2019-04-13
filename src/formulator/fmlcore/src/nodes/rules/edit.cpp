@@ -756,7 +756,7 @@ int MoveDel( SelectNode &sn, SelectInfo &si, HAutodetectMulticharOp *autoMultich
 		{
 			if( ::GlueLine( sn, pLineNode, 1 ) == 0 )
 			{
-				// удалось
+				// 				
 				return 0;
 			}
 			else
@@ -1542,7 +1542,7 @@ int OnOperator_AutoMultiplication( CNode *pNode, QString keyword1char, QString& 
 						tryFormulaNode->GetParent()->RecalculateSize( 1 );
 
 					btnID = HF_BTNID_MATHML_CODE;
-					btnIDParam = _T("<math display='block'></math>"); // игнорировать автозамену, она уже произошла
+					btnIDParam = _T("<math display='block'></math>"); // 
 					iRet = __AUTOREPLACE_MATHML_CODE;
 				}
 			}
@@ -1713,7 +1713,7 @@ int OnOperator( QChar ch, SelectNode &sn, SelectInfo &si, QString& btnID, QStrin
 	int isLeft = -1;
 	if( currentOperatorEtalon == NULL && isDivSub_newOp )
 	{
-		currentOperatorEtalon = autoMulticharOp->getOperator1( _T("+") ); // все равно какая операция, она будет проигнорирована
+		currentOperatorEtalon = autoMulticharOp->getOperator1( _T("+") ); // 
 	}
 	if( currentOperatorEtalon )
 	{
@@ -1900,7 +1900,7 @@ int OnOperator( QChar ch, SelectNode &sn, SelectInfo &si, QString& btnID, QStrin
 			((CPlaneText*) pNodeUpLeft)->setNodeInfo( newOp );
 			((CPlaneText*) pNodeUpLeft)->setNodeExInfo( newOp );
 			((CPlaneText*) pNodeUpLeft)->setFStyle( newOp->getFStyle(), ((CPlaneText*) pNodeUpLeft)->getOtherStyleFont() );
-			((CPlaneText*) pNodeUpLeft)->to_mathml_data.precedence = mmlPrecedence_Atom;	// так надо, в newOp приоритет запорчен при создании (HAutodetectMulticharOp::init)
+			((CPlaneText*) pNodeUpLeft)->to_mathml_data.precedence = mmlPrecedence_Atom;	//  (HAutodetectMulticharOp::init)
 			pNodeUpLeft->RecalculateSize( 0 );
 		}
 	}

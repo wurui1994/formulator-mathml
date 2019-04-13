@@ -32,11 +32,7 @@
 #ifndef __HUTILS_HKMAP_H__
 #define __HUTILS_HKMAP_H__
 
-#include <QDataStream>
-#include <QFile>
-#include <QString>
-#include <QVector>
-#include <QMap>
+#include <QtCore/QtCore>
 #include <map>
 
 #include "../hutils_global.h"

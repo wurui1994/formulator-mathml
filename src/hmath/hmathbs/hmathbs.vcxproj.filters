@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="la">
+      <UniqueIdentifier>{8a0c2d79-7902-4d97-ad5d-019fa407afb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="la\slae">
+      <UniqueIdentifier>{e01017b1-ad6a-4df4-8e5c-f14fc5dff3bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="polynomial">
+      <UniqueIdentifier>{2b5a0b3f-563c-45d2-82ab-a69c9b15598d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scalarType">
+      <UniqueIdentifier>{d81dada0-ce70-4c7a-90ef-bd5db24cd5aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scalarType\numbers">
+      <UniqueIdentifier>{7e3d4b7b-4bd3-4d60-9e46-1ae03e1f7c8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scalarType\numbers\basedef">
+      <UniqueIdentifier>{048cdd30-411d-4789-b1e8-5fa20c8678f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scalarType\arrays">
+      <UniqueIdentifier>{06e3aa9e-745c-44d2-a8ab-ce9e72911513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rationalfunc">
+      <UniqueIdentifier>{2b530253-9e12-49de-aea5-a514bd823821}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\la\eigenval.cpp">
+      <Filter>la</Filter>
+    </ClCompile>
+    <ClCompile Include="src\la\matrix_internal.cpp">
+      <Filter>la</Filter>
+    </ClCompile>
+    <ClCompile Include="src\la\slae\common.cpp">
+      <Filter>la\slae</Filter>
+    </ClCompile>
+    <ClCompile Include="src\la\slae\gauss.cpp">
+      <Filter>la\slae</Filter>
+    </ClCompile>
+    <ClCompile Include="src\la\slae\jordangauss.cpp">
+      <Filter>la\slae</Filter>
+    </ClCompile>
+    <ClCompile Include="src\la\slae\lu.cpp">
+      <Filter>la\slae</Filter>
+    </ClCompile>
+    <ClCompile Include="src\la\slae\reflection.cpp">
+      <Filter>la\slae</Filter>
+    </ClCompile>
+    <ClCompile Include="src\la\slae\relaxation.cpp">
+      <Filter>la\slae</Filter>
+    </ClCompile>
+    <ClCompile Include="src\la\slae\rotation.cpp">
+      <Filter>la\slae</Filter>
+    </ClCompile>
+    <ClCompile Include="src\la\slae\siter.cpp">
+      <Filter>la\slae</Filter>
+    </ClCompile>
+    <ClCompile Include="src\la\slae\slae_internal.cpp">
+      <Filter>la\slae</Filter>
+    </ClCompile>
+    <ClCompile Include="src\la\slae\ziter.cpp">
+      <Filter>la\slae</Filter>
+    </ClCompile>
+    <ClCompile Include="src\polynomial\internalFunc.cpp">
+      <Filter>polynomial</Filter>
+    </ClCompile>
+    <ClCompile Include="src\polynomial\polina.cpp">
+      <Filter>polynomial</Filter>
+    </ClCompile>
+    <ClCompile Include="src\numbers\Complex.cpp">
+      <Filter>scalarType\numbers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\numbers\Integer.cpp">
+      <Filter>scalarType\numbers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\numbers\Natural.cpp">
+      <Filter>scalarType\numbers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\numbers\Rational.cpp">
+      <Filter>scalarType\numbers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cdsrnumbers\BigNumber.cpp">
+      <Filter>scalarType\numbers\basedef</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cdsrnumbers\CDSRRational.cpp">
+      <Filter>scalarType\numbers\basedef</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rationalfunc\ratfunc.cpp">
+      <Filter>rationalfunc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rationalfunc\rfinternal.cpp">
+      <Filter>rationalfunc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hmathbs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\la\eigenval.h">
+      <Filter>la</Filter>
+    </ClInclude>
+    <ClInclude Include="src\la\matrix_internal.h">
+      <Filter>la</Filter>
+    </ClInclude>
+    <ClInclude Include="src\la\slae\common.h">
+      <Filter>la\slae</Filter>
+    </ClInclude>
+    <ClInclude Include="src\la\slae\gauss.h">
+      <Filter>la\slae</Filter>
+    </ClInclude>
+    <ClInclude Include="src\la\slae\jordangauss.h">
+      <Filter>la\slae</Filter>
+    </ClInclude>
+    <ClInclude Include="src\la\slae\lu.h">
+      <Filter>la\slae</Filter>
+    </ClInclude>
+    <ClInclude Include="src\la\slae\reflection.h">
+      <Filter>la\slae</Filter>
+    </ClInclude>
+    <ClInclude Include="src\la\slae\relaxation.h">
+      <Filter>la\slae</Filter>
+    </ClInclude>
+    <ClInclude Include="src\la\slae\rotation.h">
+      <Filter>la\slae</Filter>
+    </ClInclude>
+    <ClInclude Include="src\la\slae\siter.h">
+      <Filter>la\slae</Filter>
+    </ClInclude>
+    <ClInclude Include="src\la\slae\slae_internal.h">
+      <Filter>la\slae</Filter>
+    </ClInclude>
+    <ClInclude Include="src\la\slae\ziter.h">
+      <Filter>la\slae</Filter>
+    </ClInclude>
+    <ClInclude Include="src\polynomial\internalFunc.h">
+      <Filter>polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\polynomial\polina.h">
+      <Filter>polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\numbers\BitSetT.h">
+      <Filter>scalarType\numbers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\numbers\Complex.h">
+      <Filter>scalarType\numbers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\numbers\Integer.h">
+      <Filter>scalarType\numbers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\numbers\Natural.h">
+      <Filter>scalarType\numbers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\numbers\Rational.h">
+      <Filter>scalarType\numbers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cdsrnumbers\BigNumber.h">
+      <Filter>scalarType\numbers\basedef</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cdsrnumbers\BitSetT2.h">
+      <Filter>scalarType\numbers\basedef</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cdsrnumbers\CDSRComplex.h">
+      <Filter>scalarType\numbers\basedef</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cdsrnumbers\CDSRInteger.h">
+      <Filter>scalarType\numbers\basedef</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cdsrnumbers\CDSRNatural.h">
+      <Filter>scalarType\numbers\basedef</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cdsrnumbers\CDSRRational.h">
+      <Filter>scalarType\numbers\basedef</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cdsrnumbers\CDSRReal.h">
+      <Filter>scalarType\numbers\basedef</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cdsrnumbers\mathconst.h">
+      <Filter>scalarType\numbers\basedef</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cdsrnumbers\number.h">
+      <Filter>scalarType\numbers\basedef</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cdsrarrays\CDSRArray.h">
+      <Filter>scalarType\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cdsrarrays\CDSRBaseMatrix.h">
+      <Filter>scalarType\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cdsrarrays\CDSRBaseVector.h">
+      <Filter>scalarType\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cdsrarrays\CDSRMatrix.h">
+      <Filter>scalarType\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cdsrarrays\CDSRMMatrix.h">
+      <Filter>scalarType\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cdsrarrays\CDSRMVector.h">
+      <Filter>scalarType\arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rationalfunc\ratfunc.h">
+      <Filter>rationalfunc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rationalfunc\rfinternal.h">
+      <Filter>rationalfunc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\basexxx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hmathbs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hmathbs_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

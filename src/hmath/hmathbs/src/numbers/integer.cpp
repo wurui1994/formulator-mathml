@@ -286,15 +286,15 @@ MATHBASE_API CDSRInteger EuqlidArray(CDSRArray<CDSRInteger>& m)
 	CDSRInteger d(0);
 	size_t i, n = m.size();
 
-	// Отсортировать массив m по-убыванию m[1]>m[2]>m[3]... - по теории
-	// Реально она осуществляется ниже
+	// m[1]>m[2]>m[3]... 
+	// 
 
 	if( n < 2) return d;
 
 	d = Euqlid(m[0], m[1]);
 	for( i = 2; i < n; i++)
 	{
-		//Сортировка массива здесь
+		//		
 		if(abs(m[i].get()) > d.get())
 			d = Euqlid(m[i], d);
 		else

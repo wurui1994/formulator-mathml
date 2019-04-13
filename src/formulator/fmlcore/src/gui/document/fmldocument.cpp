@@ -29,9 +29,9 @@
 **
 ****************************************************************************/
 
-#include <QApplication>
-#include <QClipboard>
-#include <QMimeData>
+#include <QtWidgets/QApplication>
+#include <QtGui/QClipboard>
+#include <QtCore/QMimeData>
 
 #include "fmldocument.h"
 #include "../widget/fmlbasewidget.h"

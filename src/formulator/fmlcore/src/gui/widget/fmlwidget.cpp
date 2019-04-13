@@ -29,10 +29,10 @@
 **
 ****************************************************************************/
 
-#include <QtWidgets>
-#include <QPrintDialog>
-#include <QPrintPreviewDialog>
-#include <QSvgGenerator>
+#include <QtWidgets/QtWidgets>
+#include <QtPrintSupport/QPrintDialog>
+#include <QtPrintSupport/QPrintPreviewDialog>
+#include <QtSvg/QSvgGenerator>
 
 #include <vector>
 
@@ -954,8 +954,8 @@ void QFormulatorWidget::initialUpdate()
 {
 	Q_ASSERT( undoRedo() && rootNode() );
 
-	// ����� ��������� ��������� �������������, ����� �������� ����� ������, 
-	// ������ ��� ������������� ���������� ����� �������������� �������� ���������
+	//  
+	// 
 	if( rootNode()->getAutodetectMulticharOp() == 0 )
 		rootNode()->createAutodetectMulticharOp();
 

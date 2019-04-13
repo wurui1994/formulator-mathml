@@ -34,14 +34,14 @@
 
 #include "../hutils_global.h"
 
-#include <QMap>
-#include <QVector>
-#include <QString>
-#include <QDataStream>
-#include <QByteArray>
-#include <QColor>
-#include <QPen>
-#include <QFont>
+#include <QtCore/QMap>
+#include <QtCore/QVector>
+#include <QtCore/QString>
+#include <QtCore/QDataStream>
+#include <QtCore/QByteArray>
+#include <QtGui/QColor>
+#include <QtGui/QPen>
+#include <QtGui/QFont>
 
 #include <cstdlib>
 #include <algorithm>

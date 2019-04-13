@@ -29,9 +29,9 @@
 **
 ****************************************************************************/
 
-#include <QSettings>
-#include <QFile>
-#include <QDir>
+#include <QtCore/QSettings>
+#include <QtCore/QFile>
+#include <QtCore/QDir>
 
 #include "HUtils/iversion.h"
 

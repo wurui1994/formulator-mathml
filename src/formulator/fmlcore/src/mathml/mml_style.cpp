@@ -598,12 +598,12 @@ void HMathMLAttr::set( const SYSINFO_Unit2PX& unit2px, AST_TXML_Tag *_token_tag,
 			}
 		}
 
-		// � ����� ���������� - ������ ����, � ���� � ������� � ����������� �������� ��������� 
-		// _T('minsize') � _T('maxsize') �� ������ ����������, �� �� �������� ������� ������ �� ���� ���������� �����, 
-		// � ��� ����� ������������ ������� _T('�������� � ����') (�.�. �������� �������� ��� ������������ �����, 
-		// ��. ������ �� MathML - 2.4.4.2 Attributes with units)
 		// 
-		// � ������ ��������� �� ����� unfilteredAttr
+		// _T('minsize') _T('maxsize') 
+		// 
+		// MathML - 2.4.4.2 Attributes with units)
+		// 
+		// unfilteredAttr
 #if 0
 		_attr = _token_tag->getAttribute( FBL_ATTR_maxsize );
 		if( _attr )
@@ -746,7 +746,7 @@ int HMathMLAttr::getChangedAttr_2_String( const SYSINFO_Unit2PX& unit2px, QStrin
 			dest += printPreservingExistingUnits( FBL_ATTR_rspace, rspace, 0, unit2px );
 		}
 #if 0
-		// � ����� ���������� ���� - ������ ����, ����������
+		//
 		if( maxsize != mml_attr.maxsize )
 		{
 			dest += printPreservingExistingUnits( FBL_ATTR_maxsize, maxsize, 1, unit2px );

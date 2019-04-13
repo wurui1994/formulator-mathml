@@ -32,7 +32,7 @@
 #if !defined( __FMLCORE_FMLEDITWIDGET_H__ )
 #define __FMLCORE_FMLEDITWIDGET_H__
 
-#include <QTimer>
+#include <QtCore/QTimer>
 #include "fmlwidget.h"
 #include "../../fmlcore_global.h"
 

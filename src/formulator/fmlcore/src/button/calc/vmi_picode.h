@@ -32,8 +32,8 @@
 #if !defined( __BULAN_VMI_PICODE_H__ )
 #define __BULAN_VMI_PICODE_H__
 
-#include <QPair>
-#include <QDataStream>
+#include <QtCore/QPair>
+#include <QtCore/QDataStream>
 
 #include "../../fmlcore_global.h"
 #include "HUtils/ihkstring.h"

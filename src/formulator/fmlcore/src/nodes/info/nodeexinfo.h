@@ -32,7 +32,7 @@
 #if !defined( __FORMULATOR_NODEEXINFO_H__ )
 #define __FORMULATOR_NODEEXINFO_H__
 
-#include <QVector>
+#include <QtCore/QVector>
 
 #include "HUtils/idrawstruct.h"
 

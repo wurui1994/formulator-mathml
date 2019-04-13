@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QFile>
+#include <QtCore/QFile>
 #include "visual_param.h"
 #include "tags.h"
 

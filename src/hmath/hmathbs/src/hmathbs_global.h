@@ -1,7 +1,7 @@
 #ifndef HMATHBS_GLOBAL_H
 #define HMATHBS_GLOBAL_H
 
-#include <qglobal.h>
+#include <QtCore/QtGlobal>
 
 #ifndef FML_STATIC_LINK
 #ifdef HMATHBS_LIB

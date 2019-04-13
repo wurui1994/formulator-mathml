@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QFile>
+#include <QtCore/QFile>
 #include "limauto.h"
 
 //#include <io.h>

@@ -32,10 +32,10 @@
 #ifndef __FMLCORE_DLG_MATHMLHIGHLIGHTER_H__
 #define __FMLCORE_DLG_MATHMLHIGHLIGHTER_H__
 
-#include <QSyntaxHighlighter>
-#include <QHash>
-#include <QMap>
-#include <QTextCharFormat>
+#include <QtGui/QSyntaxHighlighter>
+#include <QtCore/QHash>
+#include <QtCore/QMap>
+#include <QtGui/QTextCharFormat>
 
 QT_BEGIN_NAMESPACE
 class QTextDocument;

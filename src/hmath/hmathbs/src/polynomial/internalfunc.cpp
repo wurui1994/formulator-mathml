@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QString>
+#include <QtCore/QString>
 #include "../cdsrarrays/cdsrarray.h"
 #include "../cdsrarrays/cdsrmatrix.h"
 #include "internalfunc.h"

@@ -5,7 +5,7 @@
 TEMPLATE = app
 TARGET = formulator
 ICON = ./fmlcore/images/fmlideico.icns
-DESTDIR = ../../run/release
+DESTDIR = ../../build/bin/release
 QT += network svg printsupport
 CONFIG += release
 DEFINES += FML_STATIC_LINK QT_SVG_LIB QT_NETWORK_LIB
@@ -16,10 +16,10 @@ DEPENDPATH +=			\
 	../hmath/hmathast/	\
 	./fmlcore/			\
 	./fmlide/
-MOC_DIR += ./GeneratedFiles/release
-OBJECTS_DIR += ../../int/release/formulator
-UI_DIR += ./GeneratedFiles
-RCC_DIR += ./GeneratedFiles
+MOC_DIR += build/moc
+OBJECTS_DIR += ../../build/obj/release/formulator
+UI_DIR += build/uic
+RCC_DIR += build/rcc
 
 #Include file(s)
 include(formulator.pri)

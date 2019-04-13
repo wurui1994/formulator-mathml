@@ -9,20 +9,20 @@ message("You are running qmake on a generated .pro file. This may not work!")
 
 TEMPLATE = app
 TARGET = testConsole
-DESTDIR = /mmlsoft/run/win32/debug
+DESTDIR = build/bin/win32/debug
 CONFIG += debug console
 INCLUDEPATH += /mmlsoft/include \
     ./GeneratedFiles/Debug \
     ./src
-LIBS += -L"d:/mmlsoft/run/win32/debug" \
+LIBS += -L"build/bin/win32/debug" \
     -lhmathast \
     -lhmathbs \
     -lhutils
 DEPENDPATH += .
-MOC_DIR += ./GeneratedFiles/debug
-OBJECTS_DIR += /mmlsoft/int/win32/debug/testConsole
-UI_DIR += ./GeneratedFiles
-RCC_DIR += ./GeneratedFiles
+MOC_DIR += build/moc
+OBJECTS_DIR += build/obj/win32/debug/testConsole
+UI_DIR += build/uic
+RCC_DIR += build/rcc
 
 #Include file(s)
 include(testConsole.pri)

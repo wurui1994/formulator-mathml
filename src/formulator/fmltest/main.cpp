@@ -29,9 +29,9 @@
 **
 ****************************************************************************/
 
-#include <QtGui/QApplication>
-#include <QTextStream>
-#include <QThread>
+#include <QtWidgets/QApplication>
+#include <QtCore/QTextStream>
+#include <QtCore/QThread>
 #include "HUtils/idrawing.h"
 #include "HMathML/itest.h"
 

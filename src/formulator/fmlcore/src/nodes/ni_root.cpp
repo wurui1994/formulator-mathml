@@ -29,10 +29,10 @@
 **
 ****************************************************************************/
 
-#include <QCursor>
-#include <QPrinter>
-#include <QApplication>
-#include <QMessageBox>
+#include <QtGui/QCursor>
+#include <QtPrintSupport/QPrinter>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QMessageBox>
 
 #include "HUtils/ihkstring.h"
 
@@ -1284,7 +1284,7 @@ void searchRecursiveFindAllBrackets( CNode* node, void* arg )
 		std::vector<SelectNode>* snb = (std::vector<SelectNode>*) arg;
 		for( long i = 0; i < (long) snb->size(); i++ )
 		{
-			// если на скобку есть ссылка из документа, отметим этот факт
+			// 
 			if( (*snb)[ i ].GetNode() == node )
 				(*snb)[ i ].SetEmpty();
 		}
@@ -1356,7 +1356,7 @@ int CRootNode::SetBracketsByChar( unsigned int nChar )
 int CRootNode::SetContentBrackets( int isLeft )
 {
 	std::vector<CBracketCoord> leftCut, rightCut;
-	if( SetContentBrackets_traversal( 1, GetLBMark(), leftCut, rightCut /*пустой массив*/ ) < 0 ) return -1;
+	if( SetContentBrackets_traversal( 1, GetLBMark(), leftCut, rightCut  ) < 0 ) return -1;
 	long leftIdx = SetContentBrackets_traversal( 0, GetRBMark(), rightCut, leftCut ), rightIdx = rightCut.size() - 1;
 	if( leftIdx < 0 || leftCut.size() == 0 || rightCut.size() == 0 || leftIdx - 1 >= (long) leftCut.size() )
 		return -1;

@@ -49,8 +49,8 @@ public :
 		DOCTYPE = 3
 	};
 
-	QString m_namespace;	// Идентификатор namespace
-	QString m_identifier;	// Идентификатор переменной
+	QString m_namespace;	// 
+	QString m_identifier;	// 
 
 public :
 	LXMLVar( void );

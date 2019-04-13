@@ -42,7 +42,7 @@
 class HUTILS_EXPORT LCEntity : public LAuto
 {
 public :
-	QString identifier;	// Идентификатор переменной
+	QString identifier;	// 
 	unsigned short pre, value;
 	short int is_big;
 

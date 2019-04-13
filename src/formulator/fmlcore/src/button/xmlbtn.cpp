@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QtAlgorithms>
+#include <QtCore/QtAlgorithms>
 
 #include "HUtils/idfas.h"
 #include "HUtils/imatchtemplate.h"

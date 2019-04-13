@@ -32,7 +32,7 @@
 #ifndef __COMMON_GUICTRL_ACCELER_H__
 #define __COMMON_GUICTRL_ACCELER_H__
 
-#include <QVector>
+#include <QtCore/QVector>
 
 #include "../hutils_global.h"
 #include "HUtils/ihkflag.h"
@@ -376,9 +376,9 @@ int HKAccelCodeEx::removeAccel( HKAccel& accel, long codeno )
 		return 0;
 
 	HKLong2pAccelCodeExMap::iterator it = m_pacmap->find( accel.getAccelCode( codeno ) );
-	if( it != m_pacmap->end() )		// есть такая комбинация
+	if( it != m_pacmap->end() )		// 
 		if( it->second->removeAccel( accel, codeno + 1 ) == 0 )
-			m_pacmap->erase( it );	// внутри никого не оказалось - можно удалять
+			m_pacmap->erase( it );	// 
 
 	return (int) m_pacmap->size();
 }
@@ -417,9 +417,9 @@ inline
 int HKAccelerator::removeAccel( HKAccel& accel )
 {
 	HKLong2AccelCodeExMap::iterator it = m_acmap.find( accel.getAccelCode( 0 ) );
-	if( it != m_acmap.end() )		// есть такая комбинация
+	if( it != m_acmap.end() )		// 
 		if( it->second.removeAccel( accel, 1 ) == 0 )
-			m_acmap.erase( it );	// внутри никого не оказалось - можно удалять
+			m_acmap.erase( it );	// 
 
 	return (int) m_acmap.size();
 }

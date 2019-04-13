@@ -29,8 +29,8 @@
 **
 ****************************************************************************/
 
-#include <QtGui>
-#include <QtNetwork>
+#include <QtGui/QtGui>
+#include <QtNetwork/QtNetwork>
 
 #include "HUtils/iversion.h"
 #include "HMathML/isettings.h"

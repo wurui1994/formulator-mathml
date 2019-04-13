@@ -32,8 +32,8 @@
 #if !defined( __FORMULATOR_FMLCORE_BTN_MMLDATA_H__ )
 #define __FORMULATOR_FMLCORE_BTN_MMLDATA_H__
 
-#include <QVector>
-#include <QDataStream>
+#include <QtCore/QVector>
+#include <QtCore/QDataStream>
 
 #include "../fmlcore_global.h"
 #include "HUtils/ihkstring.h"

@@ -4,18 +4,16 @@
 
 TEMPLATE = lib
 TARGET = hutils
-DESTDIR = /mmlsoft/run/debug
+DESTDIR = build/bin/debug
 CONFIG += debug
 DEFINES += _UNICODE HUTILS_LIB
-INCLUDEPATH += /mmlsoft/include \
-    ./GeneratedFiles \
-    ./GeneratedFiles/Debug
-LIBPATH += d:/mmlsoft/run/win32/debug
+INCLUDEPATH += include ./uic
+LIBPATH += build/bin/win32/debug
 DEPENDPATH += .
 MOC_DIR += ./GeneratedFiles/debug
-OBJECTS_DIR += /mmlsoft/int/debug/hutils/
-UI_DIR += ./GeneratedFiles
-RCC_DIR += ./GeneratedFiles
+OBJECTS_DIR += build/obj/debug/hutils/
+UI_DIR += build/uic
+RCC_DIR += build/rcc
 
 #Include file(s)
 include(hutils.pri)

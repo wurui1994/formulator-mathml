@@ -32,9 +32,9 @@
 #ifndef __FMLCORE_DLG_DEFINESIZEDLG_H__
 #define __FMLCORE_DLG_DEFINESIZEDLG_H__
 
-#include <QMainWindow>
-#include <QString>
-#include <QDialog>
+#include <QtWidgets/QMainWindow>
+#include <QtCore/QString>
+#include <QtWidgets/QDialog>
 
 QT_BEGIN_NAMESPACE
 class QSpinBox;

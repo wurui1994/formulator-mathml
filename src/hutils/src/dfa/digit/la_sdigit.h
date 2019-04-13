@@ -54,15 +54,15 @@ public :
 	LSDigit( void );
 	int	isBig( void );
 
-	double			mnt_float;	// мантисса для вещ. константы
-	unsigned long	pre_int;	// константа целого типа
-	unsigned long	mnt_int;	// константа целого типа
-	short int		power;		// степень
-	short int		powerE;		// степень для E
-	short int		asign;		// знак
-	short int		sign;		// знак степени
+	double			mnt_float;	// 
+	unsigned long	pre_int;	// 
+	unsigned long	mnt_int;	// 
+	short int		power;		// 
+	short int		powerE;		// 
+	short int		asign;		// 
+	short int		sign;		// 
 	short int		is_big;		// 
-	short int		decimal;	// decimal
+	short int		decimal;	// 
 
 protected:
 

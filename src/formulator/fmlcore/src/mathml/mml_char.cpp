@@ -199,24 +199,27 @@ extern const QString __mml_char__value[ MML_CHAR__NUMBER ] =
 	_T("\t"),
 	_T(" "),
 
+	// å…¶ä»–è¯­è¨€çš„å­—ç¬¦
+#if 0
 	_T("?"),
 	_T("-"),
 	_T("?"),
 	_T("i"),
-	_T("¹"),
-	_T("Ø"),
-	_T("Ù"),
-	_T("Ú"),
+	_T("?),
+	_T("?),
+	_T("?),
+	_T("?),
 	_T("-"),
 	_T("R"),
-	_T("È"),//å
+	_T("?),//?
 	_T("?"),
 	_T("<"),
-	_T("¨"),
-	_T("¬"),
+	_T("?),
+	_T("?),
 	_T("c"),
-	_T("ª"),
-	_T("ä")
+	_T("?),
+	_T("?)
+#endif
 };
 
 extern const QString __mml_char__name[ MML_CHAR__NUMBER ] =

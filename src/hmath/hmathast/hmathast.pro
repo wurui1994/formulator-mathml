@@ -4,20 +4,20 @@
 
 TEMPLATE = lib
 TARGET = hmathast
-DESTDIR = /mmlsoft/run/debug
+DESTDIR = build/bin/debug
 CONFIG += debug
 DEFINES += HMATHAST_LIB
 INCLUDEPATH += /mmlsoft/include \
     ./GeneratedFiles \
     ./GeneratedFiles/Debug
-LIBPATH += /mmlsoft/run/debug
+LIBPATH += build/bin/debug
 LIBS += -lhutils \
         -lhmathbs
 DEPENDPATH += .
-MOC_DIR += ./GeneratedFiles/debug
-OBJECTS_DIR += /mmlsoft/int/debug/hmathast
-UI_DIR += ./GeneratedFiles
-RCC_DIR += ./GeneratedFiles
+MOC_DIR += build/moc
+OBJECTS_DIR += /mmlsoft/build/obj/debug/hmathast
+UI_DIR += build/uic
+RCC_DIR += build/rcc
 
 #Include file(s)
 include(hmathast.pri)

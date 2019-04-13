@@ -34,7 +34,7 @@
 
 /////////////////////////////////////////////////////////////////////
 
-#include <QVector>
+#include <QtCore/QVector>
 #include <algorithm>
 
 #include "HUtils/ihkstring.h"

@@ -47,7 +47,7 @@ public:
 		String = 1
 	};
 
-	QString read_string;	// принятая строка
+	QString read_string;	//
 	QChar quat;
 
 	LString( QChar _quat = _T('\"') );

@@ -32,7 +32,7 @@
 #if !defined( __FMLCORE_FMLVIEWWINDOW_H__ )
 #define __FMLCORE_FMLVIEWWINDOW_H__
 
-#include <QScrollArea>
+#include <QtWidgets/QScrollArea>
 
 class QAction;
 class QActionGroup;

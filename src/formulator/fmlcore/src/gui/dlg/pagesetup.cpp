@@ -29,8 +29,8 @@
 **
 ****************************************************************************/
 
-#include <QtWidgets>
-#include <QPageSetupDialog>
+#include <QtWidgets/QtWidgets>
+#include <QtPrintSupport/QPageSetupDialog>
 
 #include "pagesetup.h"
 #include "HMathML/isettings.h"

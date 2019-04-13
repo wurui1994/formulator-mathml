@@ -33,7 +33,7 @@
 #define __COMMON_LANGUAGE_MATHML_FORMAT_MML_STYLE_H__
 
 #include <vector>
-#include <QDataStream>
+#include <QtCore/QDataStream>
 
 #include "../fmlcore_global.h"
 #include "HUtils/ihkflag.h"

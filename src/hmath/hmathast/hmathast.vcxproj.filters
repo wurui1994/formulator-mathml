@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="type">
+      <UniqueIdentifier>{1b0c781f-af5d-462d-9de5-02fc99ed0adf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ast">
+      <UniqueIdentifier>{a239e437-5ea8-40c7-accc-32f9af81bd89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ast\eval">
+      <UniqueIdentifier>{e443e685-6bc0-4913-915a-2f7577d58a8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ast\type">
+      <UniqueIdentifier>{001ac59b-3059-458b-8fd9-4ae3689a0dab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{94038200-1af1-42ab-96b6-e453872971df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\group">
+      <UniqueIdentifier>{bb2455c4-9da1-425f-87d5-d9b8e3b328e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\object">
+      <UniqueIdentifier>{88233f3e-1c39-44d6-b217-5be510d818b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\polynomial">
+      <UniqueIdentifier>{39350a6d-99f0-40ea-9b19-b62abbc73ab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\set">
+      <UniqueIdentifier>{fab57962-7368-47f0-af39-6266332fd086}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\string">
+      <UniqueIdentifier>{a3c6b4da-6c95-4b8e-928e-6ba3ccc47564}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\uniword">
+      <UniqueIdentifier>{a36fde82-80db-4daa-ab24-fd9b0ed1f8ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\vector">
+      <UniqueIdentifier>{935a033a-4438-452c-b747-8be483342f98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mminfo">
+      <UniqueIdentifier>{2da055f2-afff-475f-b9b4-386216e17e13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="operator">
+      <UniqueIdentifier>{84dfe8a9-ce73-4f33-922e-96f2735cfc8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="operator\execop">
+      <UniqueIdentifier>{1d2560fa-d8b2-4579-909a-26b9ddbfef11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="operator\initop">
+      <UniqueIdentifier>{2b421b15-9aae-4e3e-b62f-35617e39574d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="symbol">
+      <UniqueIdentifier>{e0be1962-a6ba-4ce3-9bb0-0d08d8466393}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vm">
+      <UniqueIdentifier>{d6270327-ef75-4032-b36b-3b6d16ef389c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vm\ode">
+      <UniqueIdentifier>{956ac2b1-9ec6-4747-857a-72758696eb74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmml">
+      <UniqueIdentifier>{bc02632d-2654-46e9-9fa7-81ce09f61995}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\type\typedsr.cpp">
+      <Filter>type</Filter>
+    </ClCompile>
+    <ClCompile Include="src\type\typetable.cpp">
+      <Filter>type</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\ast_print.cpp">
+      <Filter>ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\astdsr.cpp">
+      <Filter>ast</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\eval\astdsr_eval_expr.cpp">
+      <Filter>ast\eval</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\eval\astdsr_eval_misc.cpp">
+      <Filter>ast\eval</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\eval\astdsr_eval_obj.cpp">
+      <Filter>ast\eval</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\eval\astdsr_eval_stmt.cpp">
+      <Filter>ast\eval</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\type\ast_argcheck.cpp">
+      <Filter>ast\type</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\type\ast_type_args.cpp">
+      <Filter>ast\type</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\type\ast_type_call.cpp">
+      <Filter>ast\type</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\type\ast_type_misc.cpp">
+      <Filter>ast\type</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\type\ast_type_obj.cpp">
+      <Filter>ast\type</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ast\type\ast_type_stmt.cpp">
+      <Filter>ast\type</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\group\mmd_group.cpp">
+      <Filter>data\group</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\group\mmd_group_op.cpp">
+      <Filter>data\group</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\object\object.cpp">
+      <Filter>data\object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\polynomial\mmd_poly.cpp">
+      <Filter>data\polynomial</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\polynomial\mmd_poly_op.cpp">
+      <Filter>data\polynomial</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\polynomial\mmd_ratf.cpp">
+      <Filter>data\polynomial</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\polynomial\mmd_ratf_op.cpp">
+      <Filter>data\polynomial</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\set\mmd_set.cpp">
+      <Filter>data\set</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\set\mmd_set_op.cpp">
+      <Filter>data\set</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\string\mmd_str_op.cpp">
+      <Filter>data\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\uniword\uniword.cpp">
+      <Filter>data\uniword</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\uniword\uniword_op.cpp">
+      <Filter>data\uniword</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\vector\mmd_vec.cpp">
+      <Filter>data\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\vector\mmd_vec_op.cpp">
+      <Filter>data\vector</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mminfo\mm_info.cpp">
+      <Filter>mminfo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\op_linear.cpp">
+      <Filter>operator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\operator.cpp">
+      <Filter>operator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\execop.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\execop_convert.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\expr\execop_expr.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\expr\execop_expr_add.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\expr\execop_expr_assign.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\expr\execop_expr_bool.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\expr\execop_expr_div.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\expr\execop_expr_mod.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\expr\execop_expr_mul.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\expr\execop_expr_pow.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\expr\execop_expr_rel_e.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\expr\execop_expr_rel_leg.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\expr\execop_expr_rel_ne.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\expr\execop_expr_set_am.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\expr\execop_expr_set_rel.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\expr\execop_expr_square.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\expr\execop_expr_sub.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\execop_fun.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\execop\execop_special.cpp">
+      <Filter>operator\execop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\initop\initop.cpp">
+      <Filter>operator\initop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\initop\initop_expr.cpp">
+      <Filter>operator\initop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\initop\initop_fun.cpp">
+      <Filter>operator\initop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\initop\initop_special.cpp">
+      <Filter>operator\initop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operator\initop\initop_var.cpp">
+      <Filter>operator\initop</Filter>
+    </ClCompile>
+    <ClCompile Include="src\symbol\smbrecord.cpp">
+      <Filter>symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="src\symbol\symbol_table_dsr.cpp">
+      <Filter>symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vm\vm_eval_equ.cpp">
+      <Filter>vm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vm\vm_eval_fun.cpp">
+      <Filter>vm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vm\vm_eval_var.cpp">
+      <Filter>vm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vm\vmcmd_print.cpp">
+      <Filter>vm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vm\vmeval.cpp">
+      <Filter>vm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vm\vmeval_run.cpp">
+      <Filter>vm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vm\vmidsr.cpp">
+      <Filter>vm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vm\ODE\OdeOneStepParam.cpp">
+      <Filter>vm\ode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vm\ODE\solde.cpp">
+      <Filter>vm\ode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vm\ODE\solde_internal.cpp">
+      <Filter>vm\ode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cmml\cmmlCalc.cpp">
+      <Filter>cmml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cmml\cmmlCalc_apply.cpp">
+      <Filter>cmml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cmml\cmmlCalc_astcreate.cpp">
+      <Filter>cmml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cmml\cmmlCalc_construct.cpp">
+      <Filter>cmml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cmml\cmmlCalc_token.cpp">
+      <Filter>cmml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cmml\cmmlCalc_vm.cpp">
+      <Filter>cmml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cmml\cmmlCalcTag.cpp">
+      <Filter>cmml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hmathast.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\type\typedsr.h">
+      <Filter>type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\type\typemodi.h">
+      <Filter>type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\type\typetable.h">
+      <Filter>type</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ast\astdsr.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ast\vmevallink.h">
+      <Filter>ast</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\data.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\smbtbllink.h">
+      <Filter>data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\group\mmd_group.h">
+      <Filter>data\group</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\group\mmd_group_op.h">
+      <Filter>data\group</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\object\obj_vec.h">
+      <Filter>data\object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\object\object.h">
+      <Filter>data\object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\polynomial\mmd_poly.h">
+      <Filter>data\polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\polynomial\mmd_poly_op.h">
+      <Filter>data\polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\polynomial\mmd_ratf.h">
+      <Filter>data\polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\polynomial\mmd_ratf_op.h">
+      <Filter>data\polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\set\mmd_set.h">
+      <Filter>data\set</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\set\mmd_set_op.h">
+      <Filter>data\set</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\string\mmd_str.h">
+      <Filter>data\string</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\string\mmd_str_op.h">
+      <Filter>data\string</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\uniword\uniword.h">
+      <Filter>data\uniword</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\uniword\uniword_op.h">
+      <Filter>data\uniword</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\vector\mmd_vec.h">
+      <Filter>data\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\vector\mmd_vec_op.h">
+      <Filter>data\vector</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mminfo\mm_domain.h">
+      <Filter>mminfo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mminfo\mm_info.h">
+      <Filter>mminfo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\operator\operator.h">
+      <Filter>operator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\operator\execop\execop.h">
+      <Filter>operator\execop</Filter>
+    </ClInclude>
+    <ClInclude Include="src\operator\execop\execop_call.h">
+      <Filter>operator\execop</Filter>
+    </ClInclude>
+    <ClInclude Include="src\symbol\optable.h">
+      <Filter>symbol</Filter>
+    </ClInclude>
+    <ClInclude Include="src\symbol\smbrecord.h">
+      <Filter>symbol</Filter>
+    </ClInclude>
+    <ClInclude Include="src\symbol\symbol_table_dsr.h">
+      <Filter>symbol</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vm\vm_eval_cmd.h">
+      <Filter>vm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vm\vm_eval_equ.h">
+      <Filter>vm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vm\vm_eval_fun.h">
+      <Filter>vm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vm\vmeval.h">
+      <Filter>vm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vm\vmidsr.h">
+      <Filter>vm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vm\ODE\OdeOneStepParam.h">
+      <Filter>vm\ode</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vm\ODE\solde.h">
+      <Filter>vm\ode</Filter>
+    </ClInclude>
+    <ClInclude Include="src\vm\ODE\solde_internal.h">
+      <Filter>vm\ode</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cmml\cmmlCalc.h">
+      <Filter>cmml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cmml\cmmlCalcErr.h">
+      <Filter>cmml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cmml\cmmlCalcTag.h">
+      <Filter>cmml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hmathast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hmathast_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

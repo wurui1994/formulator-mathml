@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QtGui>
+#include <QtGui/QtGui>
 
 #include "HMathAST/icmml.h"
 #include "HMathAST/iast.h"

@@ -32,7 +32,7 @@
 #if !defined( __COMMON_LIMAUTO_H__ )
 #define __COMMON_LIMAUTO_H__
 
-#include <QDataStream>
+#include <QtCore/QDataStream>
 #include "../basexxx.h"
 
 // class LAuto
@@ -42,25 +42,23 @@ class HUTILS_EXPORT LAuto
 	
 protected :
 
-	qint32	CurrentState;	// Текущее состояние конечного автомата
-	qint32	PrevState;		// Предыдущее состояние конечного автомата
-	qint32	nStates,		// Количество состояний конечного автомата
-			nAlphabet;		// Количество символов входного алфавита
-	long*	Jmp;			// Таблица переходов
-	long*	EndStates;		// Вектор флагов последних
-							// состояний конечного автомата
-	qint32	read;			// Количество символов, принятых конечным
-							// автоматом в последний раз
-	QChar	character;		// Текущий символ на входе
-	
+	qint32	CurrentState;	// 
+	qint32	PrevState;		// 
+	qint32	nStates,		// 
+			nAlphabet;		// 
+	long*	Jmp;			// 
+	long*	EndStates;		// 				
+							// 
+	qint32	read;			// 
+							// 
+	QChar	character;		// 
 protected :
 	
-	virtual	void Deeds( void );						// Реализация действий, выполняемых при 
-													// переходе между состояниями
-	virtual	long What( const QChar nextS ) = 0;		// Перекодирование символа входного
-													// алфавита в индекс таблицы переходов
-	long	GetPreviousState( void );				// Предыдущее состояние
-
+	virtual	void Deeds( void );						// 
+													// 
+	virtual	long What( const QChar nextS ) = 0;		// 
+													// 
+	long	GetPreviousState( void );				// 
 	void FreeMemory( void );
 	
 public :
@@ -69,8 +67,8 @@ public :
 	LAuto( long anSt, long anAB, long* aJmp, long* aEndStates );
 	virtual ~LAuto( void );
 	
-	int Analisys( const QStringRef& aText );	// Рабочий цикл анализа входного текста
-	long GetRead( void );					// Количество символов, принятых в последний раз
+	int Analisys( const QStringRef& aText );
+	long GetRead( void );					
 	void Reset( void );
 
 	int ReadFile( QString path );

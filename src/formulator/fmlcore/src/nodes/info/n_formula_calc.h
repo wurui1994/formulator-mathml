@@ -32,7 +32,7 @@
 #if !defined( __FORMULATOR_EXT_FORMULA_H__ )
 #define __FORMULATOR_EXT_FORMULA_H__
  
-#include <QVector>
+#include <QtCore/QVector>
 #include <map>
 #include "HUtils/idrawstruct.h"
 #include "../../fmlcore_global.h"

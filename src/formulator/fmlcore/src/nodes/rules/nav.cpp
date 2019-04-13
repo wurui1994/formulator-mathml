@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QRegExp>
+#include <QtCore/QRegExp>
 
 #include "nav.h"
 #include "movstruc.h"
@@ -187,7 +187,7 @@ int IsHideSelection( int fLeft, int fSel, SelectNode &sn, SelectInfo& si )
 {
 	if( !fSel && !si.GetBegin().IsEmpty() )
 	{
-		// снять выделение, курсор в позицию направления движения
+		// 
 		sn = (fLeft ? si.GetBegin() : si.GetEnd());
 		si.SetEmpty();
 		return 0;
@@ -319,7 +319,7 @@ int MoveInLine( CLineNode *pLineNode, long nPos, MotionData &md )
 
 			if( md.IsWord() ) 
 			{
-				// если дальше следует текст, анализируем не нужно ли войти внутрь текста
+				// 
 				if( md.IsAllowIntoText() && pLineNode->GetChild( nPos )->GetType() == NODE_PLANETEXT )
 				{
 					CPlaneText *pPlaneText = (CPlaneText*) pLineNode->GetChild( nPos );

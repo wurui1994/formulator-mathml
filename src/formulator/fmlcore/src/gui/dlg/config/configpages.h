@@ -34,7 +34,7 @@
 
 /////////////////////////////////////////////////////////////////////////////
 
-#include <QtWidgets>
+#include <QtWidgets/QtWidgets>
 
 class CTypesettingPage : public QWidget
 {

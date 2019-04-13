@@ -65,7 +65,7 @@ int Line_SelFunc( const RectFde &rc, PointFde &tl,
 	{
 		if( ((CParentNode*) sb.GetNode())->GetChildCount() == 0 )
 		{
-			// пустая линия
+			// 
 			RectFde rcItem;
 			PointFde res = tl + sb.GetNode()->GetPosition();
 			rcItem.setLeft( res.x() );

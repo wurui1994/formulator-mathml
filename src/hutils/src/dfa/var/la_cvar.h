@@ -42,7 +42,7 @@
 class HUTILS_EXPORT LCVar : public LAuto
 {
 public :
-	QString identifier;	// Идентификатор переменной
+	QString identifier;	// 
 
 public :
 	LCVar( void );

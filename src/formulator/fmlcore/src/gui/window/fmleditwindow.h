@@ -32,11 +32,11 @@
 #if !defined( __FMLCORE_FMLEDITWINDOW_H__ )
 #define __FMLCORE_FMLEDITWINDOW_H__
 
-#include <QAction>
-#include <QScrollArea>
-#include <QTimer>
-#include <QFontComboBox>
-#include <QLabel>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QScrollArea>
+#include <QtCore/QTimer>
+#include <QtWidgets/QFontComboBox>
+#include <QtWidgets/QLabel>
 
 #include "fmlviewwindow.h"
 #include "../../fmlcore_global.h"

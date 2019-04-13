@@ -29,10 +29,16 @@
 **
 ****************************************************************************/
 
-#include <QApplication>
-#include <QSplashScreen>
-#include <QThread>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QSplashScreen>
+#include <QtCore/QThread>
 #include "HMathML/idocview.h"
+
+#ifdef NDEBUG
+#pragma comment(lib,"qtmain.lib")
+#else
+#pragma comment(lib,"qtmaind.lib")
+#endif
 
 int main( int argc, char *argv[] )
 {

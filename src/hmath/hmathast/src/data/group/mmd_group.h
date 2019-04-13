@@ -34,7 +34,7 @@
 
 #include "HUtils/ihkstring.h"
 #include "HMathBS/iarray.h"
-#include <QStringList>
+#include <QtCore/QStringList>
 #include <vector>
 #include <list>
 #include "../object/obj_vec.h"

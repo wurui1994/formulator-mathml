@@ -29,8 +29,8 @@
 **
 ****************************************************************************/
 
-#include <QtGlobal>
-#include <QtWidgets>
+#include <QtCore/QtGlobal>
+#include <QtWidgets/QtWidgets>
 
 #include "HUtils/idrawing.h"
 #include "HMathML/isettings.h"

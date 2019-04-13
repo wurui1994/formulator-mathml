@@ -32,7 +32,7 @@
 #if !defined( __FORMULATOR_INCLUDE_MMLTAGS_H__ )
 #define __FORMULATOR_INCLUDE_MMLTAGS_H__
 
-#include <QString>
+#include <QtCore/QString>
 #include "HUtils/ihkmap.h"
 
 ///////////////////////////////////////////////////////////////////////////////

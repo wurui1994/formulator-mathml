@@ -32,7 +32,7 @@
 #if !defined( __COMMON_LONGFLAG_H__ )
 #define __COMMON_LONGFLAG_H__
 
-#include <QDataStream>
+#include <QtCore/QDataStream>
 
 template<class T> class HKFlag
 {

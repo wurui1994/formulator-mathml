@@ -34,7 +34,7 @@
 
 /////////////////////////////////////////////////////////////////////
 
-#include <QString>
+#include <QtCore/QString>
 
 inline
 QString enENDE( const QString& pText )

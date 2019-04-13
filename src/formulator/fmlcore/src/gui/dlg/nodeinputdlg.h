@@ -32,11 +32,11 @@
 #ifndef __FMLCORE_DLG_NODEINPUTDLG_H__
 #define __FMLCORE_DLG_NODEINPUTDLG_H__
 
-#include <QString>
-#include <QDialog>
-#include <QComboBox>
-#include <QSpinBox>
-#include <QCheckBox>
+#include <QtCore/QString>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QSpinBox>
+#include <QtWidgets/QCheckBox>
 
 #include "HUtils/idrawstruct.h"
 #include "../../fmlcore_global.h"

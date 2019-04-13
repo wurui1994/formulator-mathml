@@ -32,11 +32,11 @@
 #ifndef __FMLCORE_DLG_CHARACTERWIDGET_H__
 #define __FMLCORE_DLG_CHARACTERWIDGET_H__
 
-#include <QFont>
-#include <QPoint>
-#include <QSize>
-#include <QString>
-#include <QWidget>
+#include <QtGui/QFont>
+#include <QtCore/QPoint>
+#include <QtCore/QSize>
+#include <QtCore/QString>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 class QMouseEvent;

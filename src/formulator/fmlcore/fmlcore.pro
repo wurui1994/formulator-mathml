@@ -4,20 +4,20 @@
 
 TEMPLATE = lib
 TARGET = fmlcore
-DESTDIR = /mmlsoft/run/debug
+DESTDIR = build/bin/debug
 QT += network svg
 CONFIG += debug
 DEFINES += FMLCORE_LIB QT_SVG_LIB QT_NETWORK_LIB
-INCLUDEPATH += /mmlsoft/include \
+INCLUDEPATH += include \
     ./GeneratedFiles \
     ./GeneratedFiles/Debug
-LIBPATH += /mmlsoft/run/debug
+LIBPATH += build/bin/debug
 LIBS += -lhutils -lhmathast
 DEPENDPATH += .
 MOC_DIR += ./GeneratedFiles/debug
-OBJECTS_DIR += /mmlsoft/int/debug/fmlcore
-UI_DIR += ./GeneratedFiles
-RCC_DIR += ./GeneratedFiles
+OBJECTS_DIR += build/obj/debug/fmlcore
+UI_DIR += build/uic
+RCC_DIR += build/rcc
 
 #Include file(s)
 include(fmlcore.pri)

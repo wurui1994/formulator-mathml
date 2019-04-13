@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QtWidgets>
+#include <QtWidgets/QtWidgets>
 
 #include "../document/fmldocument.h"
 #include "fmleditwidget.h"

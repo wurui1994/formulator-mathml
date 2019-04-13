@@ -32,8 +32,8 @@
 #if !defined( __FMLCORE_TEST_DIR2HTML_H__ )
 #define __FMLCORE_TEST_DIR2HTML_H__
 
-#include <QObject>
-#include <QDir>
+#include <QtCore/QObject>
+#include <QtCore/QDir>
 
 #include "../fmlcore_global.h"
 

@@ -32,8 +32,7 @@
 #ifndef _CDSRRational_H_
 #define _CDSRRational_H_
 
-//#define NO_CHECK  //проверки на переполнение определено не будет
-
+//#define NO_CHECK  //
 #include "../hmathbs_global.h"
 
 #define AUTO_SHORTING

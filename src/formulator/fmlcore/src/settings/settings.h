@@ -32,11 +32,11 @@
 #if !defined( __FORMULATOR_SETTINGS_SETTINGS_H__ )
 #define __FORMULATOR_SETTINGS_SETTINGS_H__
 
-#include <QtGlobal>
-#include <QCoreApplication>
-#include <QSettings>
-#include <QUuid>
-#include <QString>
+#include <QtCore/QtGlobal>
+#include <QtCore/QCoreApplication>
+#include <QtCore/QSettings>
+#include <QtCore/QUuid>
+#include <QtCore/QString>
 
 #include "HUtils/iversion.h"
 #include "HUtils/idrawing.h"

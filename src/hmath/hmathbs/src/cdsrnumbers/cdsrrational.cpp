@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include "cdsrrational.h"
 
-//Максимальний дільник ділення навпіл
+//
 MATHBASE_API long EvklidMaxBinDiv( long in1, long in2 ) 
 {
 	if(in1 == 0 || in2 == 0) return 1;
@@ -50,7 +50,7 @@ MATHBASE_API long EvklidMaxBinDiv( long in1, long in2 )
 }
 
 
-//Мінімальний множник 
+//
 MATHBASE_API long EvklidMinMul( long a, long b ) {
 	long MaxDiv=EvklidMaxBinDiv(a,b);
 	if( MaxDiv == 0 ) 

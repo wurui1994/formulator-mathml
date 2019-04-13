@@ -32,7 +32,7 @@
 #ifndef __FMLCORE_DLG_CONFIGDLG_H__
 #define __FMLCORE_DLG_CONFIGDLG_H__
 
-#include <QDialog>
+#include <QtWidgets/QDialog>
 
 QT_BEGIN_NAMESPACE
 class QListWidget;

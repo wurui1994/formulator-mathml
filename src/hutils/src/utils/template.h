@@ -32,7 +32,7 @@
 #if !defined( __COMMON_UTILS_TEMPLATE_H__ )
 #define __COMMON_UTILS_TEMPLATE_H__
 
-#include <QVector>
+#include <QtCore/QVector>
 
 #include "HUtils/ihkstring.h"
 #include "../hutils_global.h"

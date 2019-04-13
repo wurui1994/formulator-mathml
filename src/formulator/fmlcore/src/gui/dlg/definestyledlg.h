@@ -32,10 +32,10 @@
 #ifndef __FMLCORE_DLG_DEFINESTYLEDLG_H__
 #define __FMLCORE_DLG_DEFINESTYLEDLG_H__
 
-#include <QMainWindow>
-#include <QString>
-#include <QDialog>
-#include <QVector>
+#include <QtWidgets/QMainWindow>
+#include <QtCore/QString>
+#include <QtWidgets/QDialog>
+#include <QtCore/QVector>
 
 QT_BEGIN_NAMESPACE
 class QComboBox;

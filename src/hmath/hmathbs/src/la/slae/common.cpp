@@ -389,7 +389,7 @@ void _InverseCR( CDSRMMatrix<CDSRReal> *pA, CDSRMMatrix<CDSRReal> *pInv )
 	for( i = 0; i < pA->n_row(); i++ )
 		row[ i ] = col[ i ] = i;
 
-	// ‘ормируем E матрицу
+	// 
 	for( i = 0; i < pA->n_row(); i++ )
 	{
 		for( j = 0; j < i; j++ )
@@ -637,7 +637,7 @@ void _DeterminantCR( CDSRMMatrix<CDSRReal> *pA, CDSRReal& rlDet )
 	CDSRMVector<long> row( pA->n_row() );
 	CDSRMVector<long> col( pA->n_row() );
 
-	// заполн€ем массив индексов
+	// 
 	for( i = 0; i < pA->n_row(); i++ )
 		row[ i ] = col[ i ] = i;
 

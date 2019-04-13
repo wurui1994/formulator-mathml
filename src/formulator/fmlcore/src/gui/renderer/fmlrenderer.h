@@ -34,12 +34,12 @@
 
 #if !defined( FML_NO_RENDERER )
 
-#include <QObject>
-#include <QSize>
-#include <QColor>
-#include <QByteArray>
-#include <QXmlStreamReader>
-#include <QPainter>
+#include <QtCore/QObject>
+#include <QtCore/QSize>
+#include <QtGui/QColor>
+#include <QtCore/QByteArray>
+#include <QtCore/QXmlStreamReader>
+#include <QtGui/QPainter>
 
 #include "../../fmlcore_global.h"
 

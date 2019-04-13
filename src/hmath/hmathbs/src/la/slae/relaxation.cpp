@@ -128,10 +128,10 @@ void _RelaxationC( CDSRMMatrix<CDSRReal> *pA, CDSRMVector<CDSRReal> *pB, CDSRMVe
 
 	for( i = 0; i < pA->n_row(); i++ )
 	{
-		// тест главной диагонали
+		// 
 		_IndexC( i, pA, &col );
 
-		// проверка на сходимость
+		// 
 		value = fabs( (*pA)( i, col[ i ] ) );
 		for( j = 0; j < pA->n_row(); j++ )
 			if( i != j && value < fabs( (*pA)( i, col[ j ] ) ) )

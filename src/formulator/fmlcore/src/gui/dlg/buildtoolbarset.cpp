@@ -29,8 +29,8 @@
 **
 ****************************************************************************/
 
-#include <QtGlobal>
-#include <QFileDialog>
+#include <QtCore/QtGlobal>
+#include <QtWidgets/QFileDialog>
 #include <vector>
 
 #include "buildtoolbarset.h"

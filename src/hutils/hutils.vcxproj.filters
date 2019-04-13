@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="version">
+      <UniqueIdentifier>{6dde8f5c-ce69-47f6-8e95-c3057cb61d1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cxx</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="collection">
+      <UniqueIdentifier>{262d2138-817b-4f86-98fc-febaf8cccf2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory">
+      <UniqueIdentifier>{2273875d-c549-438a-a064-49b91131b89d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cc">
+      <UniqueIdentifier>{cd3c2d20-f139-4174-ab92-d269e14cd9e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>hhh</Extensions>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{6e38a0ec-7c1d-4a37-94ba-42651ef1f5f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dfa">
+      <UniqueIdentifier>{b9855ca3-dc0f-4a5a-9ede-f65181ef518d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dfa\digit">
+      <UniqueIdentifier>{494fd425-6588-4e23-b4c4-4345b10ace06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dfa\dsr2_var">
+      <UniqueIdentifier>{45ffa3d4-3239-4200-9a92-777032d5a5c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dfa\entity">
+      <UniqueIdentifier>{47837b6d-9018-4f04-9117-2b27376ccd50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dfa\keyword">
+      <UniqueIdentifier>{3eaeea2d-dcef-4761-859b-373a8b810ca0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dfa\string">
+      <UniqueIdentifier>{16bf8e93-bdaa-4240-963e-c44abae7713e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dfa\var">
+      <UniqueIdentifier>{e539b067-4ef7-476c-ad2a-67fbaaab3ff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml">
+      <UniqueIdentifier>{b9b80a28-8e64-4b17-9835-2458b7caa213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xml\parse">
+      <UniqueIdentifier>{340639f4-d0b5-47b4-adbd-6330cc7895dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="property">
+      <UniqueIdentifier>{eb9bf9bc-e092-4def-80af-c3ec24f16c4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drawing">
+      <UniqueIdentifier>{1df97bc1-05dd-48e6-95ec-2e96db31f384}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{ac20a3fb-a204-4a51-811a-0e8ae412149b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\version\companyinfo.h">
+      <Filter>version</Filter>
+    </ClInclude>
+    <ClInclude Include="src\version\version.h">
+      <Filter>version</Filter>
+    </ClInclude>
+    <ClInclude Include="src\collection\HKArray.h">
+      <Filter>collection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\collection\HKFlag.h">
+      <Filter>collection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\collection\HKMap.h">
+      <Filter>collection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\collection\HKString.h">
+      <Filter>collection</Filter>
+    </ClInclude>
+    <ClInclude Include="src\memory\autoheap.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cc\baselex.h">
+      <Filter>cc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cc\basepars.h">
+      <Filter>cc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cc\source.h">
+      <Filter>cc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\htmlcolor.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\linemsg.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\loadimage.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\message.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\template.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\ustring.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dfa\dfas.h">
+      <Filter>dfa</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dfa\limauto.h">
+      <Filter>dfa</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dfa\digit\la_digit.h">
+      <Filter>dfa\digit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dfa\digit\la_sdigit.h">
+      <Filter>dfa\digit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dfa\digit\la_sdigit_base.h">
+      <Filter>dfa\digit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dfa\digit\la_xmlattr_sdigit.h">
+      <Filter>dfa\digit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dfa\dsr2_var\la_dsr2var.h">
+      <Filter>dfa\dsr2_var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dfa\entity\la_entity.h">
+      <Filter>dfa\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dfa\keyword\la_keyword.h">
+      <Filter>dfa\keyword</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dfa\string\la_str.h">
+      <Filter>dfa\string</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dfa\string\la_xmlstr.h">
+      <Filter>dfa\string</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dfa\var\la_cvar.h">
+      <Filter>dfa\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dfa\var\la_xmlvar.h">
+      <Filter>dfa\var</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xml\xml.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xml\xml_tree.h">
+      <Filter>xml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xml\parse\grammar.h">
+      <Filter>xml\parse</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xml\parse\parserxml.h">
+      <Filter>xml\parse</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xml\parse\thelexxml.h">
+      <Filter>xml\parse</Filter>
+    </ClInclude>
+    <ClInclude Include="src\property\ctrl_template.h">
+      <Filter>property</Filter>
+    </ClInclude>
+    <ClInclude Include="src\property\ctrl_type.h">
+      <Filter>property</Filter>
+    </ClInclude>
+    <ClInclude Include="src\property\fastparam.h">
+      <Filter>property</Filter>
+    </ClInclude>
+    <ClInclude Include="src\property\internal_property.h">
+      <Filter>property</Filter>
+    </ClInclude>
+    <ClInclude Include="src\property\param.h">
+      <Filter>property</Filter>
+    </ClInclude>
+    <ClInclude Include="src\property\tags.h">
+      <Filter>property</Filter>
+    </ClInclude>
+    <ClInclude Include="src\property\visual_param.h">
+      <Filter>property</Filter>
+    </ClInclude>
+    <ClInclude Include="src\drawing\drawengine.h">
+      <Filter>drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="src\drawing\drawstruct.h">
+      <Filter>drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="src\drawing\fdedraw_qt.h">
+      <Filter>drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\acceler.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gui\toolbar.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hutils.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hutils_global.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\debug\moc_undoredo.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_undoredo.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\collection\HKMap.cpp">
+      <Filter>collection</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cc\baselex.cpp">
+      <Filter>cc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cc\basepars.cpp">
+      <Filter>cc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\htmlcolor.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\loadimage.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\message.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\template.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\undoredo.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\ustring.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\dfas.cpp">
+      <Filter>dfa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\limauto.cpp">
+      <Filter>dfa</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\digit\la_digit.cpp">
+      <Filter>dfa\digit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\digit\la_sdigit.cpp">
+      <Filter>dfa\digit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\digit\la_sdigit_base.cpp">
+      <Filter>dfa\digit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\digit\la_xmlattr_sdigit.cpp">
+      <Filter>dfa\digit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\dsr2_var\la_dsr2var.cpp">
+      <Filter>dfa\dsr2_var</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\entity\la_entity.cpp">
+      <Filter>dfa\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\keyword\la_keyword.cpp">
+      <Filter>dfa\keyword</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\string\la_str.cpp">
+      <Filter>dfa\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\string\la_xmlstr.cpp">
+      <Filter>dfa\string</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\var\la_cvar.cpp">
+      <Filter>dfa\var</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dfa\var\la_xmlvar.cpp">
+      <Filter>dfa\var</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xml\xml.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xml\xml_tree.cpp">
+      <Filter>xml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xml\parse\parserxml.cpp">
+      <Filter>xml\parse</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xml\parse\thelexxml.cpp">
+      <Filter>xml\parse</Filter>
+    </ClCompile>
+    <ClCompile Include="src\property\ctrl_template.cpp">
+      <Filter>property</Filter>
+    </ClCompile>
+    <ClCompile Include="src\property\fastparam.cpp">
+      <Filter>property</Filter>
+    </ClCompile>
+    <ClCompile Include="src\property\param.cpp">
+      <Filter>property</Filter>
+    </ClCompile>
+    <ClCompile Include="src\property\visual_param.cpp">
+      <Filter>property</Filter>
+    </ClCompile>
+    <ClCompile Include="src\drawing\drawengine.cpp">
+      <Filter>drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\drawing\fdedraw_qt.cpp">
+      <Filter>drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hutils.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\utils\undoredo.h">
+      <Filter>utils</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

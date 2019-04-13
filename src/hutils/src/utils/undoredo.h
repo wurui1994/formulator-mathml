@@ -36,10 +36,10 @@
 
 //#include <cstdlib>
 
-#include <QTimerEvent>
-#include <QDataStream>
-#include <QByteArray>
-#include <QList>
+#include <QtCore/QTimerEvent>
+#include <QtCore/QDataStream>
+#include <QtCore/QByteArray>
+#include <QtCore/QList>
 
 #include "../hutils_global.h"
 

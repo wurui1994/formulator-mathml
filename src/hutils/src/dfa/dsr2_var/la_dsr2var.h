@@ -46,8 +46,8 @@ protected:
 	MArray<QString> keywords;
 
 public :
-	QString identifier;	// Идентификатор переменной
-	QString modifier;		// Модификатор переменной ('g' = greek, etc.)
+	QString identifier;	// 
+	QString modifier;		// ('g' = greek, etc.)
 
 public :
 

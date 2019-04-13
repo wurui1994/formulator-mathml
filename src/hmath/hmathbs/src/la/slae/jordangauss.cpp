@@ -110,8 +110,7 @@ void _JordanGauss( CDSRMMatrix<CDSRReal> *pA, CDSRMVector<CDSRReal> *pB, CDSRMVe
 }
 
 //////////////////////////////////////////////////////////////////////
-// Метод Жордана - Гаусса с выбором по столбцу
-
+// 
 MATHBASE_API 
 void _JordanGaussC( CDSRMMatrix<CDSRReal> *pA, CDSRMVector<CDSRReal> *pB, CDSRMVector<CDSRReal> *pX )
 {
@@ -193,7 +192,7 @@ void _JordanGaussC( CDSRMMatrix<CDSRReal> *pA, CDSRMVector<CDSRReal> *pB, CDSRMV
 }
 
 //////////////////////////////////////////////////////////////////////
-// Метод Жордана - Гаусса с выбором по строке
+// 
 
 MATHBASE_API 
 void _JordanGaussR( CDSRMMatrix<CDSRReal> *pA, CDSRMVector<CDSRReal> *pB, CDSRMVector<CDSRReal> *pX )
@@ -277,7 +276,7 @@ void _JordanGaussR( CDSRMMatrix<CDSRReal> *pA, CDSRMVector<CDSRReal> *pB, CDSRMV
 }
 
 //////////////////////////////////////////////////////////////////////
-// Метод Жордана - Гаусса с выбором по столбцу и строке
+//
 
 MATHBASE_API 
 void _JordanGaussCR( CDSRMMatrix<CDSRReal> *pA, CDSRMVector<CDSRReal> *pB, CDSRMVector<CDSRReal> *pX )

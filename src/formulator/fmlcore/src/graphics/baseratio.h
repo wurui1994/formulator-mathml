@@ -32,8 +32,8 @@
 #if !defined( __FORMULATOR_BASERATIO_H__ )
 #define __FORMULATOR_BASERATIO_H__
 
-#include <QVector>
-#include <QDataStream>
+#include <QtCore/QVector>
+#include <QtCore/QDataStream>
 
 #include "HUtils/ihkstring.h"
 #include "HUtils/idrawing.h"

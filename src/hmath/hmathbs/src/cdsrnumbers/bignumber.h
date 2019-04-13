@@ -69,9 +69,9 @@ public:
 	void setbit(unsigned long bit, unsigned char value = 1);
 
 protected:
-	long m_bitLen;				//длина в битах
-	long m_Length;				//длина в BN_TYPE
-	CDSRArray<BN_TYPE> m_bits;	//само число
+	long m_bitLen;				//
+	long m_Length;				//BN_TYPE
+	CDSRArray<BN_TYPE> m_bits;	//	
 	//std::string m_forReturn;
 
 public :

@@ -43,7 +43,7 @@ HMathOpAttr* getOperatorEntryByMML( const QString& name )
 	p = getOperatorEntryByName( name, 0 );
 	if( p )
 	{
-		coa = *p;
+		memcpy(&coa,p,sizeof(struct HMathOpAttr));
 		coa.lspace = coa.lspace * ::getCurrentFormulatorStyle().getEM();
 		coa.rspace = coa.rspace * ::getCurrentFormulatorStyle().getEM();
 		return &coa;
@@ -58,7 +58,7 @@ HMathOpAttr* getOperatorEntryByDSR( const QString& name )
 	p = getOperatorEntryByName( name, 1 );
 	if( p )
 	{
-		coa = *p;
+		memcpy(&coa, p, sizeof(struct HMathOpAttr));
 		coa.lspace = coa.lspace * ::getCurrentFormulatorStyle().getEM();
 		coa.rspace = coa.rspace * ::getCurrentFormulatorStyle().getEM();
 		return &coa;

@@ -83,8 +83,11 @@ enum mmlPrecedence
 
 ///////////////////////////////////////////////////////////////////////////////
 
+// 改用纯struct数组,避免VS2019在Release编译极为缓慢
+
 struct __HERMITECH_FORMULIB__ HMathOpAttr
 {
+#if 0
 	//=== presentation
 	QString mmlname;				//
 	quint8 form;				// prefix, postfix, infix
@@ -129,6 +132,20 @@ struct __HERMITECH_FORMULIB__ HMathOpAttr
 		minsize = _minsize;
 		precedence = _precedence;
 	}
+#endif
+	QString mmlname = _T("");
+	quint64 form = HMathOpAttr_FORM_INFIX;
+	quint64 fence = 0;
+	quint64 separator = 0;
+	quint64 accent = 0;
+	quint64 largeop = 0;
+	quint64 movablelimits = 0;
+	quint64 stretchy = 0;
+	double lspace = 0.0;
+	double rspace = 0.0;
+	const QString& dsrname = _T("");
+	long minsize = 1;
+	enum mmlPrecedence precedence = mmlPrecedence_Atom;
 };
 
 #define HMathOpAttr_OPERATOR_NUMBER	555

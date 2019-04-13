@@ -32,7 +32,7 @@
 #if !defined( __FORMULATOR_FMLCORE_BTN_TOOLBARSET_H__ )
 #define __FORMULATOR_FMLCORE_BTN_TOOLBARSET_H__
 
-#include <QMultiMap>
+#include <QtCore/QMultiMap>
 #include <vector>
 #include "toolbar.h"
 

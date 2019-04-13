@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QtGui>
+#include <QtGui/QtGui>
 #include "mathmlhighlighter.h"
 
 #include "../../nodes/info/n_proplist.h"

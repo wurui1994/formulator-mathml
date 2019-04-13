@@ -32,7 +32,7 @@
 #ifndef __FMLCORE_DLG_MATHMLTEXTEDITWIDGET_H__
 #define __FMLCORE_DLG_MATHMLTEXTEDITWIDGET_H__
 
-#include <QDockWidget>
+#include <QtWidgets/QDockWidget>
 
 QT_BEGIN_NAMESPACE
 class QAction;

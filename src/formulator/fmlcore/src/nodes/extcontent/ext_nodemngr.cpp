@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QDir>
+#include <QtCore/QDir>
 #include "HUtils/iloadimage.h"
 #include "../../settings/options.h"
 #include "../node.h"

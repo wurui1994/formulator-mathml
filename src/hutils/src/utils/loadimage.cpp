@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QFileDialog>
+#include <QtWidgets/QFileDialog>
 #include "loadimage.h"
 
 int LoadImagePath( QString& dest )

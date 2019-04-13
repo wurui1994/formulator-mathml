@@ -29,13 +29,13 @@
 **
 ****************************************************************************/
 
-#include <QFileInfo>
-#include <QFile>
-#include <QStringList>
-#include <QTextStream>
-#include <QTextDocument>
-#include <QDesktopServices>
-#include <QUrl>
+#include <QtCore/QFileInfo>
+#include <QtCore/QFile>
+#include <QtCore/QStringList>
+#include <QtCore/QTextStream>
+#include <QtGui/QTextDocument>
+#include <QtGui/QDesktopServices>
+#include <QtCore/QUrl>
 
 #include <time.h>
 

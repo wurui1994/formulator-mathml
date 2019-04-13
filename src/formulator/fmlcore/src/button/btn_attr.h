@@ -32,7 +32,7 @@
 #if !defined( __FORMULATOR_FMLCORE_BTN_ATTR_H__ )
 #define __FORMULATOR_FMLCORE_BTN_ATTR_H__
 
-#include <QDataStream>
+#include <QtCore/QDataStream>
 
 #include "HUtils/ixml.h"
 #include "HUtils/ihkflag.h"

@@ -4,18 +4,18 @@
 
 TEMPLATE = app
 TARGET = fmlide
-DESTDIR = /mmlsoft/run/debug
+DESTDIR = build/bin/debug
 CONFIG += debug
 INCLUDEPATH += /mmlsoft/include \
     ./GeneratedFiles \
     ./GeneratedFiles/Debug
-LIBPATH += /mmlsoft/run/debug
+LIBPATH += build/bin/debug
 LIBS += -lhutils -lhmathbs -lhmathast -lfmlcore
 DEPENDPATH += .
-MOC_DIR += ./GeneratedFiles/debug
-OBJECTS_DIR += /mmlsoft/int/debug/fmlide
-UI_DIR += ./GeneratedFiles
-RCC_DIR += ./GeneratedFiles
+MOC_DIR += build/moc
+OBJECTS_DIR += build/obj/debug/fmlide
+UI_DIR += build/uic
+RCC_DIR += build/rcc
 
 #Include file(s)
 include(fmlide.pri)

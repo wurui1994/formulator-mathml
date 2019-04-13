@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0D9040E4-C279-42A4-8191-8CCE1606275D}</ProjectGuid>
+    <RootNamespace>hmathast</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.28707.177</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../../build/bin/$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>../../../build/obj/$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../../build/bin/$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>../../../build/obj/$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../include;.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;HMATHAST_LIB;QT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat />
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../include;.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(Configuration);$(QTDIR)\include\QtCore;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_THREAD_SUPPORT;QT_CORE_LIB;HMATHAST_LIB;QT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ast\astdsr.cpp" />
+    <ClCompile Include="src\ast\ast_print.cpp" />
+    <ClCompile Include="src\ast\eval\astdsr_eval_expr.cpp" />
+    <ClCompile Include="src\ast\eval\astdsr_eval_misc.cpp" />
+    <ClCompile Include="src\ast\eval\astdsr_eval_obj.cpp" />
+    <ClCompile Include="src\ast\eval\astdsr_eval_stmt.cpp" />
+    <ClCompile Include="src\ast\type\ast_argcheck.cpp" />
+    <ClCompile Include="src\ast\type\ast_type_args.cpp" />
+    <ClCompile Include="src\ast\type\ast_type_call.cpp" />
+    <ClCompile Include="src\ast\type\ast_type_misc.cpp" />
+    <ClCompile Include="src\ast\type\ast_type_obj.cpp" />
+    <ClCompile Include="src\ast\type\ast_type_stmt.cpp" />
+    <ClCompile Include="src\cmml\cmmlCalc.cpp" />
+    <ClCompile Include="src\cmml\cmmlCalcTag.cpp" />
+    <ClCompile Include="src\cmml\cmmlCalc_apply.cpp" />
+    <ClCompile Include="src\cmml\cmmlCalc_astcreate.cpp" />
+    <ClCompile Include="src\cmml\cmmlCalc_construct.cpp" />
+    <ClCompile Include="src\cmml\cmmlCalc_token.cpp" />
+    <ClCompile Include="src\cmml\cmmlCalc_vm.cpp" />
+    <ClCompile Include="src\data\group\mmd_group.cpp" />
+    <ClCompile Include="src\data\group\mmd_group_op.cpp" />
+    <ClCompile Include="src\data\object\object.cpp" />
+    <ClCompile Include="src\data\polynomial\mmd_poly.cpp" />
+    <ClCompile Include="src\data\polynomial\mmd_poly_op.cpp" />
+    <ClCompile Include="src\data\polynomial\mmd_ratf.cpp" />
+    <ClCompile Include="src\data\polynomial\mmd_ratf_op.cpp" />
+    <ClCompile Include="src\data\set\mmd_set.cpp" />
+    <ClCompile Include="src\data\set\mmd_set_op.cpp" />
+    <ClCompile Include="src\data\string\mmd_str_op.cpp" />
+    <ClCompile Include="src\data\uniword\uniword.cpp" />
+    <ClCompile Include="src\data\uniword\uniword_op.cpp" />
+    <ClCompile Include="src\data\vector\mmd_vec.cpp" />
+    <ClCompile Include="src\data\vector\mmd_vec_op.cpp" />
+    <ClCompile Include="src\hmathast.cpp" />
+    <ClCompile Include="src\mminfo\mm_info.cpp" />
+    <ClCompile Include="src\operator\execop\execop.cpp" />
+    <ClCompile Include="src\operator\execop\execop_convert.cpp" />
+    <ClCompile Include="src\operator\execop\execop_fun.cpp" />
+    <ClCompile Include="src\operator\execop\execop_special.cpp" />
+    <ClCompile Include="src\operator\execop\expr\execop_expr.cpp" />
+    <ClCompile Include="src\operator\execop\expr\execop_expr_add.cpp" />
+    <ClCompile Include="src\operator\execop\expr\execop_expr_assign.cpp" />
+    <ClCompile Include="src\operator\execop\expr\execop_expr_bool.cpp" />
+    <ClCompile Include="src\operator\execop\expr\execop_expr_div.cpp" />
+    <ClCompile Include="src\operator\execop\expr\execop_expr_mod.cpp" />
+    <ClCompile Include="src\operator\execop\expr\execop_expr_mul.cpp" />
+    <ClCompile Include="src\operator\execop\expr\execop_expr_pow.cpp" />
+    <ClCompile Include="src\operator\execop\expr\execop_expr_rel_e.cpp" />
+    <ClCompile Include="src\operator\execop\expr\execop_expr_rel_leg.cpp" />
+    <ClCompile Include="src\operator\execop\expr\execop_expr_rel_ne.cpp" />
+    <ClCompile Include="src\operator\execop\expr\execop_expr_set_am.cpp" />
+    <ClCompile Include="src\operator\execop\expr\execop_expr_set_rel.cpp" />
+    <ClCompile Include="src\operator\execop\expr\execop_expr_square.cpp" />
+    <ClCompile Include="src\operator\execop\expr\execop_expr_sub.cpp" />
+    <ClCompile Include="src\operator\initop\initop.cpp" />
+    <ClCompile Include="src\operator\initop\initop_expr.cpp" />
+    <ClCompile Include="src\operator\initop\initop_fun.cpp" />
+    <ClCompile Include="src\operator\initop\initop_special.cpp" />
+    <ClCompile Include="src\operator\initop\initop_var.cpp" />
+    <ClCompile Include="src\operator\operator.cpp" />
+    <ClCompile Include="src\operator\op_linear.cpp" />
+    <ClCompile Include="src\symbol\smbrecord.cpp" />
+    <ClCompile Include="src\symbol\symbol_table_dsr.cpp" />
+    <ClCompile Include="src\type\typedsr.cpp" />
+    <ClCompile Include="src\type\typetable.cpp" />
+    <ClCompile Include="src\vm\ODE\OdeOneStepParam.cpp" />
+    <ClCompile Include="src\vm\ODE\solde.cpp" />
+    <ClCompile Include="src\vm\ODE\solde_internal.cpp" />
+    <ClCompile Include="src\vm\vmcmd_print.cpp" />
+    <ClCompile Include="src\vm\vmeval.cpp" />
+    <ClCompile Include="src\vm\vmeval_run.cpp" />
+    <ClCompile Include="src\vm\vmidsr.cpp" />
+    <ClCompile Include="src\vm\vm_eval_equ.cpp" />
+    <ClCompile Include="src\vm\vm_eval_fun.cpp" />
+    <ClCompile Include="src\vm\vm_eval_var.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ast\astdsr.h" />
+    <ClInclude Include="src\ast\vmevallink.h" />
+    <ClInclude Include="src\cmml\cmmlCalc.h" />
+    <ClInclude Include="src\cmml\cmmlCalcErr.h" />
+    <ClInclude Include="src\cmml\cmmlCalcTag.h" />
+    <ClInclude Include="src\data\data.h" />
+    <ClInclude Include="src\data\group\mmd_group.h" />
+    <ClInclude Include="src\data\group\mmd_group_op.h" />
+    <ClInclude Include="src\data\object\object.h" />
+    <ClInclude Include="src\data\object\obj_vec.h" />
+    <ClInclude Include="src\data\polynomial\mmd_poly.h" />
+    <ClInclude Include="src\data\polynomial\mmd_poly_op.h" />
+    <ClInclude Include="src\data\polynomial\mmd_ratf.h" />
+    <ClInclude Include="src\data\polynomial\mmd_ratf_op.h" />
+    <ClInclude Include="src\data\set\mmd_set.h" />
+    <ClInclude Include="src\data\set\mmd_set_op.h" />
+    <ClInclude Include="src\data\smbtbllink.h" />
+    <ClInclude Include="src\data\string\mmd_str.h" />
+    <ClInclude Include="src\data\string\mmd_str_op.h" />
+    <ClInclude Include="src\data\uniword\uniword.h" />
+    <ClInclude Include="src\data\uniword\uniword_op.h" />
+    <ClInclude Include="src\data\vector\mmd_vec.h" />
+    <ClInclude Include="src\data\vector\mmd_vec_op.h" />
+    <ClInclude Include="src\hmathast.h" />
+    <ClInclude Include="src\hmathast_global.h" />
+    <ClInclude Include="src\mminfo\mm_domain.h" />
+    <ClInclude Include="src\mminfo\mm_info.h" />
+    <ClInclude Include="src\operator\execop\execop.h" />
+    <ClInclude Include="src\operator\execop\execop_call.h" />
+    <ClInclude Include="src\operator\operator.h" />
+    <ClInclude Include="src\symbol\optable.h" />
+    <ClInclude Include="src\symbol\smbrecord.h" />
+    <ClInclude Include="src\symbol\symbol_table_dsr.h" />
+    <ClInclude Include="src\type\typedsr.h" />
+    <ClInclude Include="src\type\typemodi.h" />
+    <ClInclude Include="src\type\typetable.h" />
+    <ClInclude Include="src\vm\ODE\OdeOneStepParam.h" />
+    <ClInclude Include="src\vm\ODE\solde.h" />
+    <ClInclude Include="src\vm\ODE\solde_internal.h" />
+    <ClInclude Include="src\vm\vmeval.h" />
+    <ClInclude Include="src\vm\vmidsr.h" />
+    <ClInclude Include="src\vm\vm_eval_cmd.h" />
+    <ClInclude Include="src\vm\vm_eval_equ.h" />
+    <ClInclude Include="src\vm\vm_eval_fun.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\hutils\hutils.vcxproj">
+      <Project>{a22d04b4-bd20-47ad-ae1d-1c5d9cde7819}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\hmathbs\hmathbs.vcxproj">
+      <Project>{494d1aa0-180b-4df7-822c-8654b7ea4bf2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" QtVersion="4.5.2" MocOptions="" QtVersion_x0020_Win32="$(DefaultQtVersion)" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

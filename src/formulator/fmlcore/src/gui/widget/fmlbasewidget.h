@@ -32,8 +32,8 @@
 #if !defined( __FMLCORE_FMLBASEWIDGET_H__ )
 #define __FMLCORE_FMLBASEWIDGET_H__
 
-#include <QVariant>
-#include <QDialog>
+#include <QtCore/QVariant>
+#include <QtWidgets/QDialog>
 
 #include "../../fmlcore_global.h"
 

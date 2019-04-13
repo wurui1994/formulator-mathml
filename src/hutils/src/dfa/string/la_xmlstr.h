@@ -49,10 +49,10 @@ public :
 		String = 1
 	};
 
-	QString read_string;	// принятая строка
-	QString read_buff;	// принятая строка
-	unsigned long	pre_int;	// константа целого типа
-	unsigned long	mnt_int;	// константа целого типа
+	QString read_string;	// 
+	QString read_buff;	// 
+	unsigned long	pre_int;	// 
+	unsigned long	mnt_int;	// 
 	short int		is_big;		// 
 	short int		is_numentity_notchar;		// 
 	QChar quat;

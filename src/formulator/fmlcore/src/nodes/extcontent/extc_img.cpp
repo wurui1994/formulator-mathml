@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QPrinter>
+#include <QtPrintSupport/QPrinter>
 
 #include "../../mathml/mml_format.h"
 #include "extc_img.h"
@@ -58,7 +58,7 @@ void CExtNodeContent_Image_Data::Load( QDataStream& ar )
 	if( m_flag.isSetFlag( EXTNODECONTENT_ID_IMG__FLAG_ATTACHED | EXTNODECONTENT_ID_IMG__FLAG_EMBEDDED ) )
 		setPath( path );
 	else
-		m_path = path;	// sekito : хотя логика мне не понятна
+		m_path = path;	// sekito : 
 }
 
 /////////////////////////////////////////////////////////////////////////////

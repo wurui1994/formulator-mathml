@@ -32,7 +32,7 @@
 #if !defined( __FORMULATOR_DICTIONARY_OP_AUTOKEYWORD_H__ )
 #define __FORMULATOR_DICTIONARY_OP_AUTOKEYWORD_H__
 
-#include <QMap>
+#include <QtCore/QMap>
 
 #include "HUtils/ihkstring.h"
 

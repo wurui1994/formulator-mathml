@@ -29,7 +29,7 @@
 **
 ****************************************************************************/
 
-#include <QPrinter>
+#include <QtPrintSupport/QPrinter>
 
 #include "../../dictionary/entity_map.h"
 #include "../../dictionary/op_autokeyword.h"

@@ -34,8 +34,8 @@
 
 /////////////////////////////////////////////////////////////////////////////
 
-#include <QMainWindow>
-#include <QFileInfo>
+#include <QtWidgets/QMainWindow>
+#include <QtCore/QFileInfo>
 #include <time.h>
 
 class QSplashScreen;
@@ -104,6 +104,9 @@ protected:
 	void setIndents( RectFde rect );
 	RealFde lineSpacing();
 	void setLineSpacing( RealFde value );
+
+	void dragEnterEvent(QDragEnterEvent* event);    // drag file into
+	void dropEvent(QDropEvent* event);              // drop file into
 
 protected slots:
 	void updateUI_OnChildScaleChanged();
